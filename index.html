@@ -1,0 +1,1960 @@
+<!DOCTYPE html>
+<html lang="fr" id="htmlRoot">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<meta name="description" content="Digit-Excel5G — Services Créatifs IA ultra-rapides. Posters, Vidéos, Logos, Chansons, Reels. Livraison 12–24h. Cameroun & Afrique.">
+<title>Digit-Excel5G — Créations IA Professionnelles | AI Creative Services</title>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,700;0,800;0,900;1,400&family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root{
+  --pur:#8B00FF;--pur2:#AA3DFF;--pur3:#CC80FF;--purdim:rgba(139,0,255,.14);
+  --hot:#FF3D00;--hot2:#FF6B35;--hotdim:rgba(255,61,0,.14);
+  --gold:#FFD600;--gold2:#FFE566;--golddim:rgba(255,214,0,.13);
+  --cyan:#00D4FF;--cyan2:#66E8FF;--cyandim:rgba(0,212,255,.12);
+  --green:#00C85A;--greendim:rgba(0,200,90,.12);
+  --pink:#FF2D78;--pinkdim:rgba(255,45,120,.12);
+  --bg:#06020E;--panel:#110620;--card:#180B2C;--card2:#1F1035;--card3:#261540;
+  --border:rgba(139,0,255,.2);--border2:rgba(255,255,255,.07);--bordergold:rgba(255,214,0,.22);
+  --text:#F0E8FF;--muted:#8A7AAA;--soft:#C0A8E8;
+  --r:14px;--r2:20px;
+  --shadow:0 4px 28px rgba(0,0,0,.3);--shadowp:0 8px 40px rgba(139,0,255,.3);
+}
+*,*::before,*::after{margin:0;padding:0;box-sizing:border-box;}
+html{scroll-behavior:smooth;}
+body{background:var(--bg);font-family:'Nunito',sans-serif;color:var(--text);overflow-x:hidden;}
+h1,h2,h3,h4,h5{font-family:'Montserrat',sans-serif;}
+
+/* ══ BILINGUAL ══ */
+.fr{display:block;}.en{display:none;}
+.lang-en .fr{display:none;}.lang-en .en{display:block;}
+.fr-i{display:inline;}.en-i{display:none;}
+.lang-en .fr-i{display:none;}.lang-en .en-i{display:inline;}
+
+/* ══ TOP BAR ══ */
+.topbar{background:linear-gradient(90deg,var(--pur),var(--hot),var(--pur));
+  padding:8px 18px;display:flex;justify-content:space-between;align-items:center;}
+.topbar-msg{font-size:11px;font-weight:800;color:#fff;letter-spacing:.5px;display:flex;align-items:center;gap:7px;}
+.flash-dot{width:7px;height:7px;border-radius:50%;background:var(--gold);animation:blink 1.2s ease infinite;flex-shrink:0;}
+@keyframes blink{0%,100%{opacity:1}50%{opacity:.3}}
+.lb-right{display:flex;gap:6px;}
+.lang-btn{background:transparent;border:1.5px solid rgba(255,255,255,.3);color:rgba(255,255,255,.7);
+  font-size:11px;font-weight:800;letter-spacing:1.5px;padding:4px 12px;border-radius:20px;
+  cursor:pointer;font-family:'Nunito',sans-serif;transition:all .2s;}
+.lang-btn.active,.lang-btn:hover{background:#fff;color:var(--pur);border-color:#fff;}
+
+/* ══ TICKER ══ */
+.ticker{background:var(--panel);border-bottom:1px solid var(--border);overflow:hidden;padding:7px 0;}
+.ticker-track{display:flex;animation:ticker 30s linear infinite;white-space:nowrap;}
+.ticker-track span{color:var(--pur3);font-size:10.5px;font-weight:800;letter-spacing:2px;text-transform:uppercase;padding:0 26px;}
+.ticker-track span::before{content:"✦  ";color:var(--gold);}
+@keyframes ticker{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+
+/* ══ HERO ══ */
+.hero{background:var(--bg);position:relative;overflow:hidden;min-height:100vh;display:flex;flex-direction:column;}
+.hero-grad{position:absolute;inset:0;
+  background:radial-gradient(ellipse 85% 60% at 50% -8%,rgba(139,0,255,.32) 0%,transparent 62%),
+             radial-gradient(ellipse 55% 40% at 90% 55%,rgba(255,61,0,.2) 0%,transparent 55%),
+             radial-gradient(ellipse 40% 30% at 8% 75%,rgba(0,212,255,.1) 0%,transparent 50%);pointer-events:none;}
+.hero-mesh{position:absolute;inset:0;pointer-events:none;opacity:.04;
+  background-image:radial-gradient(rgba(139,0,255,.3) 1px,transparent 1px);background-size:30px 30px;}
+.hero-inner{position:relative;z-index:2;flex:1;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:60px 20px 44px;}
+
+/* LOGO */
+.dx-logo{width:90px;height:90px;margin:0 auto 16px;
+  filter:drop-shadow(0 0 24px rgba(139,0,255,.75));animation:logospin 12s linear infinite,logopulse 3s ease-in-out infinite;}
+@keyframes logospin{from{transform:rotate(0deg)}to{transform:rotate(360deg)}}
+@keyframes logopulse{0%,100%{filter:drop-shadow(0 0 16px rgba(139,0,255,.7))}50%{filter:drop-shadow(0 0 36px rgba(255,61,0,.9))}}
+
+/* COUNTDOWN */
+.countdown-wrap{display:inline-flex;align-items:center;gap:8px;background:rgba(255,61,0,.15);
+  border:1px solid rgba(255,61,0,.4);border-radius:12px;padding:9px 18px;margin-bottom:16px;flex-wrap:wrap;justify-content:center;}
+.cd-label{font-size:10.5px;font-weight:800;color:var(--hot2);letter-spacing:1px;text-transform:uppercase;}
+.cd-units{display:flex;gap:6px;}
+.cdu{text-align:center;background:rgba(255,61,0,.2);border-radius:7px;padding:5px 10px;min-width:44px;}
+.cdu .n{font-family:'Montserrat',sans-serif;font-size:21px;font-weight:900;color:var(--hot2);line-height:1;display:block;}
+.cdu .l{font-size:9px;color:rgba(255,107,53,.7);font-weight:700;letter-spacing:1px;text-transform:uppercase;}
+.cdu-sep{font-size:20px;font-weight:900;color:var(--hot2);align-self:center;padding-bottom:8px;}
+
+.hero-live{display:inline-flex;align-items:center;gap:6px;background:rgba(139,0,255,.15);border:1px solid rgba(139,0,255,.35);
+  padding:5px 15px;border-radius:30px;margin-bottom:14px;font-size:10.5px;font-weight:800;letter-spacing:2px;text-transform:uppercase;color:var(--pur3);}
+.live-dot{width:7px;height:7px;border-radius:50%;background:var(--pur3);animation:blink 1.5s ease infinite;flex-shrink:0;}
+
+.hero-h1{font-size:clamp(34px,9.5vw,72px);font-weight:900;line-height:.93;letter-spacing:-1px;
+  background:linear-gradient(135deg,#fff 0%,var(--pur3) 35%,var(--gold) 60%,var(--hot2) 100%);
+  -webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;margin-bottom:10px;}
+.hero-sub{font-size:clamp(13px,2.5vw,16px);color:var(--soft);line-height:1.75;max-width:520px;margin:0 auto 22px;font-weight:400;}
+
+/* PRICE ROW */
+.price-slashed{display:inline-flex;align-items:center;gap:12px;background:rgba(255,214,0,.1);
+  border:2px solid var(--bordergold);border-radius:14px;padding:12px 20px;margin-bottom:22px;flex-wrap:wrap;justify-content:center;}
+.ps-old{font-size:13px;color:var(--muted);text-decoration:line-through;font-weight:700;}
+.ps-new{font-family:'Montserrat',sans-serif;font-size:clamp(20px,5vw,28px);font-weight:900;color:var(--gold);line-height:1;}
+.ps-badge{font-size:10px;font-weight:900;background:var(--hot);color:#fff;padding:3px 9px;border-radius:20px;letter-spacing:.5px;}
+
+/* HERO CTAS */
+.hero-ctas{display:flex;flex-wrap:wrap;gap:10px;justify-content:center;margin-bottom:18px;}
+.trust-row{display:flex;flex-wrap:wrap;gap:7px;justify-content:center;}
+.tbadge{display:inline-flex;align-items:center;gap:5px;padding:5px 12px;border-radius:30px;font-size:11px;font-weight:700;}
+.tb-pur{background:var(--purdim);color:var(--pur3);border:1px solid rgba(139,0,255,.25);}
+.tb-gold{background:var(--golddim);color:var(--gold2);border:1px solid var(--bordergold);}
+.tb-hot{background:var(--hotdim);color:var(--hot2);border:1px solid rgba(255,61,0,.25);}
+
+/* ══ BUTTONS ══ */
+.btn-fire{display:inline-flex;align-items:center;gap:8px;padding:15px 28px;border-radius:50px;
+  background:linear-gradient(135deg,var(--hot),var(--hot2));color:#fff;font-size:14.5px;font-weight:900;
+  text-decoration:none;border:none;cursor:pointer;font-family:'Nunito',sans-serif;
+  box-shadow:0 6px 28px rgba(255,61,0,.5);animation:firepulse 2.5s ease infinite;transition:transform .2s;}
+@keyframes firepulse{0%,100%{box-shadow:0 6px 28px rgba(255,61,0,.5),0 0 0 0 rgba(255,61,0,.4)}50%{box-shadow:0 6px 28px rgba(255,61,0,.5),0 0 0 12px rgba(255,61,0,0)}}
+.btn-fire:hover{transform:translateY(-3px);}
+.btn-pur{display:inline-flex;align-items:center;gap:8px;padding:14px 24px;border-radius:50px;
+  background:linear-gradient(135deg,var(--pur),var(--pur2));color:#fff;font-size:14px;font-weight:800;
+  border:none;cursor:pointer;font-family:'Nunito',sans-serif;box-shadow:0 6px 24px rgba(139,0,255,.45);transition:all .2s;}
+.btn-pur:hover{transform:translateY(-2px);}
+.btn-gold{display:inline-flex;align-items:center;gap:8px;padding:13px 24px;border-radius:50px;
+  background:linear-gradient(135deg,#B8860B,var(--gold));color:#000;font-size:13.5px;font-weight:800;
+  border:none;cursor:pointer;font-family:'Nunito',sans-serif;box-shadow:0 5px 20px rgba(255,214,0,.4);transition:all .2s;}
+.btn-gold:hover{transform:translateY(-2px);}
+.btn-wa{display:inline-flex;align-items:center;gap:8px;padding:13px 22px;border-radius:50px;
+  background:linear-gradient(135deg,#25D366,#128C7E);color:#fff;font-size:13.5px;font-weight:800;
+  text-decoration:none;border:none;cursor:pointer;font-family:'Nunito',sans-serif;transition:all .2s;}
+.btn-outline{display:inline-flex;align-items:center;gap:8px;padding:12px 22px;border-radius:50px;
+  background:transparent;color:var(--soft);font-size:13px;font-weight:700;border:1.5px solid var(--border2);cursor:pointer;font-family:'Nunito',sans-serif;transition:all .2s;}
+.btn-outline:hover{border-color:var(--pur2);color:var(--pur3);}
+
+.wave{display:block;width:100%;line-height:0;}
+
+/* ══ NAV ══ */
+.sticky-nav{position:sticky;top:0;z-index:200;background:rgba(6,2,14,.97);backdrop-filter:blur(16px);border-bottom:2px solid var(--pur);padding:9px 16px;}
+.nav-inner{display:flex;justify-content:center;flex-wrap:wrap;gap:4px;max-width:800px;margin:0 auto;}
+.nav-inner a,.nav-inner button{text-decoration:none;font-size:10.5px;font-weight:700;letter-spacing:.8px;text-transform:uppercase;padding:7px 12px;border-radius:24px;color:var(--muted);background:transparent;border:1px solid var(--border2);cursor:pointer;font-family:'Nunito',sans-serif;transition:all .2s;}
+.nav-inner a:hover,.nav-inner a.active{background:var(--purdim);color:var(--pur3);border-color:rgba(139,0,255,.35);}
+.nav-order{background:var(--hot)!important;color:#fff!important;border-color:var(--hot)!important;font-weight:900!important;}
+.nav-admin-btn{background:var(--golddim)!important;color:var(--gold2)!important;border-color:var(--bordergold)!important;}
+
+/* ══ LAYOUT ══ */
+.wrap{max-width:640px;margin:0 auto;padding:0 16px;}
+.sec-head{display:flex;align-items:center;gap:10px;margin:40px 0 20px;}
+.sec-head .line{flex:1;height:1.5px;background:linear-gradient(90deg,var(--pur),transparent);}
+.sec-head .line.r{background:linear-gradient(90deg,transparent,var(--pur));}
+.sec-head h2{font-size:clamp(17px,4.5vw,23px);font-weight:900;color:var(--text);white-space:nowrap;letter-spacing:-.3px;}
+@keyframes fadeUp{from{opacity:0;transform:translateY(18px)}to{opacity:1;transform:translateY(0)}}
+
+/* ══ SERVICE SHOWCASE CARDS ══ */
+.svc-grid{display:grid;grid-template-columns:1fr 1fr;gap:14px;}
+.svc-card{background:var(--card);border-radius:var(--r);overflow:hidden;border:1px solid var(--border2);
+  animation:fadeUp .5s ease both;transition:transform .2s,box-shadow .2s,border-color .2s;cursor:pointer;}
+.svc-card:hover{transform:translateY(-5px);box-shadow:var(--shadowp);border-color:rgba(139,0,255,.4);}
+
+/* SAMPLE DELIVERY PREVIEWS — CSS art */
+.svc-preview{width:100%;height:145px;position:relative;overflow:hidden;display:flex;align-items:center;justify-content:center;}
+.sp-birthday{background:linear-gradient(155deg,#1A0035,#5500AA);}
+.sp-video{background:linear-gradient(155deg,#200010,#700040);}
+.sp-song{background:linear-gradient(155deg,#001A20,#006070);}
+.sp-biz{background:linear-gradient(155deg,#1A1500,#665500);}
+.sp-church{background:linear-gradient(155deg,#0A0A25,#252580);}
+.sp-ad{background:linear-gradient(155deg,#1A0A00,#663300);}
+.sp-logo{background:linear-gradient(155deg,#001A0A,#006630);}
+.sp-reel{background:linear-gradient(155deg,#1A0020,#660070);}
+.sp-voice{background:linear-gradient(155deg,#0A0A20,#202275);}
+.sp-brand{background:linear-gradient(155deg,#100010,#500050);}
+
+.svc-badge{position:absolute;top:8px;right:8px;font-size:9px;font-weight:900;letter-spacing:1px;text-transform:uppercase;padding:3px 8px;border-radius:20px;z-index:3;}
+.sb-ai{background:rgba(139,0,255,.9);color:#fff;}
+.sb-hot{background:var(--hot);color:#fff;}
+.sb-new{background:var(--green);color:#fff;}
+.sb-pop{background:rgba(0,212,255,.9);color:#000;}
+.sb-fire{background:linear-gradient(135deg,var(--hot),var(--gold));color:#000;}
+
+/* PRICE TAG ON CARD */
+.card-price{position:absolute;bottom:8px;left:8px;background:rgba(0,0,0,.7);backdrop-filter:blur(8px);
+  border-radius:20px;padding:4px 10px;display:flex;align-items:center;gap:6px;z-index:3;}
+.cp-old{font-size:10px;color:rgba(255,255,255,.5);text-decoration:line-through;font-weight:700;}
+.cp-new{font-size:13px;font-weight:900;color:var(--gold);}
+.cp-badge{font-size:9px;font-weight:900;background:var(--hot);color:#fff;padding:2px 6px;border-radius:10px;}
+
+/* SAMPLE LABEL */
+.sample-label{position:absolute;top:8px;left:8px;background:rgba(0,0,0,.65);backdrop-filter:blur(4px);
+  border-radius:5px;padding:3px 8px;font-size:9px;font-weight:800;color:var(--gold);letter-spacing:.8px;text-transform:uppercase;z-index:3;}
+
+.svc-body{padding:12px 13px 14px;}
+.svc-body h4{font-size:14px;font-weight:900;color:var(--text);margin-bottom:4px;}
+.svc-body p{font-size:11.5px;color:var(--muted);line-height:1.55;margin-bottom:8px;}
+.svc-meta{display:flex;justify-content:space-between;align-items:center;}
+.svc-time{font-size:10px;font-weight:800;color:var(--cyan2);letter-spacing:.5px;}
+.order-chip{display:inline-flex;align-items:center;gap:5px;padding:7px 13px;border-radius:20px;
+  background:var(--purdim);color:var(--pur3);font-size:12px;font-weight:800;border:1px solid rgba(139,0,255,.3);
+  cursor:pointer;transition:all .2s;font-family:'Nunito',sans-serif;}
+.order-chip:hover{background:var(--pur);color:#fff;border-color:var(--pur);}
+.order-chip-fire{background:var(--hotdim);color:var(--hot2);border-color:rgba(255,61,0,.3);}
+.order-chip-fire:hover{background:var(--hot);color:#fff;}
+
+/* ══ WHY US SECTION ══ */
+.why-grid{display:grid;grid-template-columns:1fr 1fr;gap:11px;}
+.why-card{background:var(--card);border-radius:var(--r);padding:15px 13px;border:1px solid var(--border2);transition:all .2s;animation:fadeUp .5s ease both;}
+.why-card:hover{border-color:rgba(139,0,255,.3);transform:translateY(-2px);}
+.wc-ico{font-size:26px;margin-bottom:8px;}
+.why-card h4{font-size:13.5px;font-weight:800;color:var(--text);margin-bottom:4px;}
+.why-card p{font-size:11.5px;color:var(--muted);line-height:1.6;}
+
+/* ══ VIRAL FEATURES ══ */
+.viral-banner{background:linear-gradient(135deg,var(--card),var(--card2));border-radius:var(--r);padding:20px 18px;border:1px solid rgba(255,214,0,.3);margin-bottom:14px;text-align:center;}
+.viral-banner h3{font-size:20px;font-weight:900;color:var(--gold2);margin-bottom:8px;}
+.viral-banner p{font-size:13px;color:var(--soft);line-height:1.7;}
+.share-btns{display:flex;gap:8px;justify-content:center;flex-wrap:wrap;margin-top:12px;}
+.sb-btn{display:inline-flex;align-items:center;gap:6px;padding:9px 15px;border-radius:24px;
+  font-size:12.5px;font-weight:800;text-decoration:none;border:none;cursor:pointer;transition:all .2s;font-family:'Nunito',sans-serif;}
+.sb-wa{background:linear-gradient(135deg,#25D366,#128C7E);color:#fff;}
+.sb-fb{background:linear-gradient(135deg,#1877F2,#0a58BF);color:#fff;}
+.sb-tt{background:linear-gradient(135deg,#FF0050,#8B00FF);color:#fff;}
+.sb-ig{background:linear-gradient(135deg,#833AB4,#E1306C,#F77737);color:#fff;}
+.sb-btn:hover{transform:translateY(-2px);filter:brightness(1.1);}
+
+/* ══ BEFORE/AFTER COMPARE ══ */
+.compare-wrap{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-bottom:14px;}
+.compare-card{border-radius:var(--r);overflow:hidden;border:1px solid var(--border2);}
+.cc-label{padding:8px 13px;font-size:11px;font-weight:800;letter-spacing:1px;text-transform:uppercase;text-align:center;}
+.cc-before .cc-label{background:rgba(255,255,255,.06);color:var(--muted);}
+.cc-after .cc-label{background:linear-gradient(135deg,var(--pur),var(--hot));color:#fff;}
+.cc-vis{height:130px;display:flex;align-items:center;justify-content:center;font-size:36px;}
+.cc-before .cc-vis{background:rgba(255,255,255,.03);}
+.cc-after .cc-vis{background:linear-gradient(135deg,var(--purdim),var(--hotdim));}
+.cc-info{padding:10px 13px;font-size:11.5px;color:var(--muted);text-align:center;line-height:1.5;}
+.cc-after .cc-info{color:var(--pur3);}
+
+/* ══ TESTIMONIALS ══ */
+.testi-carousel{position:relative;overflow:hidden;border-radius:var(--r);margin-bottom:10px;}
+.testi-track{display:flex;transition:transform .5s ease;}
+.testi-slide{flex-shrink:0;width:100%;}
+.testi-card{background:var(--card);border-radius:var(--r);padding:20px 18px;border:1px solid var(--border2);}
+.testi-stars{font-size:16px;margin-bottom:10px;color:var(--gold);}
+.testi-card p{font-size:13px;color:var(--soft);line-height:1.75;font-style:italic;margin-bottom:12px;}
+.testi-author{display:flex;align-items:center;gap:10px;}
+.tav{width:40px;height:40px;border-radius:50%;background:linear-gradient(135deg,var(--pur),var(--hot));display:flex;align-items:center;justify-content:center;font-size:18px;flex-shrink:0;}
+.tinfo strong{display:block;font-size:13px;color:var(--text);}
+.tinfo span{font-size:11px;color:var(--muted);}
+.tinfo .earn-badge{display:inline-block;margin-top:3px;background:var(--greendim);color:var(--green);font-size:10px;font-weight:800;padding:2px 8px;border-radius:20px;border:1px solid rgba(0,200,90,.2);}
+.testi-dots{display:flex;gap:6px;justify-content:center;margin-top:9px;}
+.tdot{width:7px;height:7px;border-radius:50%;background:var(--border2);cursor:pointer;transition:background .3s;}
+.tdot.active{background:var(--pur);}
+.testi-nav{display:flex;gap:8px;justify-content:center;margin-top:7px;}
+.tnav{width:34px;height:34px;border-radius:50%;background:var(--card2);border:1px solid var(--border2);color:var(--soft);font-size:15px;cursor:pointer;display:flex;align-items:center;justify-content:center;transition:all .2s;}
+.tnav:hover{background:var(--pur);color:#fff;}
+
+/* ══ PAYMENT ══ */
+.pay-card{background:var(--card);border-radius:var(--r2);overflow:hidden;border:1px solid var(--border);box-shadow:var(--shadowp);margin-bottom:14px;}
+.pay-stripe{height:5px;background:linear-gradient(90deg,var(--pur),var(--hot),var(--gold));}
+.pay-head{background:linear-gradient(135deg,var(--panel),var(--card));padding:20px 20px;text-align:center;border-bottom:1px solid var(--border2);}
+.pay-head h3{font-size:21px;font-weight:900;color:var(--gold2);margin-bottom:6px;}
+.pay-head p{font-size:13px;color:var(--soft);line-height:1.65;}
+.pay-methods{padding:16px;display:flex;flex-direction:column;gap:11px;}
+.pm{background:var(--card2);border-radius:12px;overflow:hidden;border:1px solid var(--border2);}
+.pm-head{padding:12px 15px;display:flex;align-items:center;gap:11px;}
+.pm-ico{width:42px;height:42px;border-radius:11px;display:flex;align-items:center;justify-content:center;font-size:20px;flex-shrink:0;}
+.pm-mtn .pm-ico{background:linear-gradient(135deg,#FFCC00,#FF9900);}
+.pm-om .pm-ico{background:linear-gradient(135deg,#FF6600,#FF3300);}
+.pm-head h4{font-size:14px;font-weight:800;}
+.pm-mtn .pm-head h4{color:#FFD700;}.pm-om .pm-head h4{color:var(--hot2);}
+.pm-head p{font-size:11.5px;color:var(--muted);}
+.pm-num{margin:0 15px 13px;background:var(--bg);border-radius:9px;padding:10px 13px;border:1.5px dashed rgba(255,255,255,.1);display:flex;align-items:center;justify-content:space-between;}
+.pn-label{font-size:9.5px;color:var(--muted);text-transform:uppercase;letter-spacing:1px;font-weight:700;}
+.pn-num{font-family:'Montserrat',sans-serif;font-size:22px;font-weight:900;letter-spacing:2px;}
+.pm-mtn .pn-num{color:#FFD700;}.pm-om .pn-num{color:var(--hot2);}
+.pn-name{font-size:11px;color:var(--muted);}
+.copy-btn{background:var(--card);color:var(--soft);border:1px solid var(--border2);border-radius:7px;padding:8px 12px;font-size:11.5px;font-weight:800;cursor:pointer;transition:all .2s;font-family:'Nunito',sans-serif;}
+.copy-btn:hover{background:var(--pur);color:#fff;border-color:var(--pur);}
+
+/* ══ ORDER FORM ══ */
+.order-form{background:var(--card);border-radius:var(--r);padding:24px 20px;border:2px solid var(--pur);}
+.order-form h3{font-size:22px;font-weight:900;color:var(--text);margin-bottom:4px;}
+.of-sub{font-size:13px;color:var(--muted);margin-bottom:18px;line-height:1.55;}
+.fgrid{display:flex;flex-direction:column;gap:10px;margin-bottom:12px;}
+.frow2{display:grid;grid-template-columns:1fr 1fr;gap:10px;}
+.fgrid input,.fgrid select,.fgrid textarea{background:var(--bg);border:1.5px solid var(--border);border-radius:9px;padding:12px 14px;font-family:'Nunito',sans-serif;font-size:13.5px;color:var(--text);outline:none;transition:border-color .2s;}
+.fgrid input:focus,.fgrid select:focus{border-color:var(--pur2);}
+.fgrid input::placeholder,.fgrid textarea::placeholder{color:var(--muted);}
+.fgrid select option{background:var(--card);}
+.fgrid textarea{resize:vertical;min-height:80px;}
+.success-box{background:var(--cyandim);border:2px solid var(--cyan);border-radius:var(--r);padding:22px;text-align:center;display:none;}
+.success-box .si{font-size:48px;margin-bottom:8px;}
+.success-box h3{font-size:20px;font-weight:900;color:var(--cyan2);}
+.success-box p{font-size:13px;color:var(--soft);line-height:1.65;margin-top:6px;}
+
+/* ══ DELIVERY TABLE ══ */
+.del-table{background:var(--card);border-radius:var(--r);overflow:hidden;border:1px solid var(--border2);}
+.del-table table{width:100%;border-collapse:collapse;}
+.del-table th{padding:11px 14px;background:linear-gradient(135deg,var(--pur),var(--hot));color:#fff;text-align:left;font-size:10.5px;font-weight:800;letter-spacing:1px;text-transform:uppercase;}
+.del-table td{padding:11px 14px;border-bottom:1px solid var(--border2);font-size:13px;color:var(--soft);}
+.del-table tr:last-child td{border-bottom:none;}
+.dchip{display:inline-block;padding:3px 10px;border-radius:20px;font-size:10.5px;font-weight:800;}
+.dc-fast{background:var(--cyandim);color:var(--cyan2);}.dc-mid{background:var(--purdim);color:var(--pur3);}.dc-fire{background:var(--hotdim);color:var(--hot2);}
+
+/* ══ CONTACT ══ */
+.contact-card{background:var(--card);border-radius:var(--r);padding:22px 20px;border:1px solid var(--border);}
+.contact-card h3{font-size:20px;font-weight:900;color:var(--gold2);margin-bottom:14px;}
+.cinfo-grid{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-bottom:14px;}
+.cinfo{background:rgba(255,255,255,.04);border-radius:10px;padding:11px 13px;border:1px solid var(--border2);}
+.cinfo .cl{font-size:9.5px;font-weight:800;letter-spacing:1.5px;text-transform:uppercase;color:var(--muted);margin-bottom:4px;}
+.cinfo .cv{font-size:13.5px;font-weight:700;color:var(--text);}
+.cta-row{display:flex;gap:9px;flex-wrap:wrap;}
+.wa-cta{flex:1;min-width:130px;display:flex;align-items:center;justify-content:center;gap:7px;padding:13px;border-radius:10px;background:linear-gradient(135deg,#25D366,#128C7E);color:#fff;text-decoration:none;font-size:13px;font-weight:800;transition:transform .15s;}
+.wa-cta:hover{transform:translateY(-1px);}
+.ig-cta{flex:1;min-width:130px;display:flex;align-items:center;justify-content:center;gap:7px;padding:13px;border-radius:10px;background:linear-gradient(135deg,var(--pur),var(--hot));color:#fff;text-decoration:none;font-size:13px;font-weight:800;}
+
+/* ══ AI CHAT ══ */
+.ai-fab{position:fixed;bottom:26px;right:20px;z-index:400;width:58px;height:58px;border-radius:50%;
+  background:linear-gradient(135deg,var(--pur),var(--hot));color:#fff;border:none;cursor:pointer;
+  box-shadow:0 6px 24px rgba(139,0,255,.55);display:flex;align-items:center;justify-content:center;font-size:24px;transition:transform .2s;}
+.ai-fab:hover{transform:scale(1.1);}
+.fab-badge{position:absolute;top:2px;right:2px;width:16px;height:16px;border-radius:50%;background:var(--hot);border:2px solid var(--bg);display:flex;align-items:center;justify-content:center;font-size:9px;font-weight:800;color:#fff;animation:blink 2s ease infinite;}
+.ai-chat-win{position:fixed;bottom:96px;right:20px;z-index:400;width:min(360px,calc(100vw - 32px));background:var(--card);border-radius:var(--r2);box-shadow:0 12px 48px rgba(0,0,0,.5);border:1px solid rgba(139,0,255,.3);overflow:hidden;display:none;animation:slideUpIn .3s ease;}
+.ai-chat-win.open{display:flex;flex-direction:column;}
+@keyframes slideUpIn{from{opacity:0;transform:translateY(14px)}to{opacity:1;transform:translateY(0)}}
+.chat-hdr{background:linear-gradient(135deg,var(--pur),var(--hot));padding:13px 16px;display:flex;align-items:center;gap:10px;}
+.chat-hdr .ch-av{width:36px;height:36px;border-radius:50%;background:rgba(255,255,255,.2);display:flex;align-items:center;justify-content:center;font-size:18px;flex-shrink:0;}
+.chat-hdr .ch-info h4{font-size:14px;font-weight:800;color:#fff;}
+.chat-hdr .ch-info p{font-size:11px;color:rgba(255,255,255,.7);}
+.chat-hdr .ch-close{margin-left:auto;background:rgba(255,255,255,.2);border:none;color:#fff;width:28px;height:28px;border-radius:50%;cursor:pointer;font-size:14px;display:flex;align-items:center;justify-content:center;}
+.chat-msgs{flex:1;overflow-y:auto;padding:13px;max-height:260px;display:flex;flex-direction:column;gap:9px;}
+.cmsg{max-width:88%;}
+.cmsg.bot{align-self:flex-start;}.cmsg.user{align-self:flex-end;}
+.mbubble{padding:10px 13px;border-radius:12px;font-size:13px;line-height:1.6;}
+.bot .mbubble{background:var(--card2);color:var(--text);border-bottom-left-radius:3px;}
+.user .mbubble{background:linear-gradient(135deg,var(--pur),var(--hot));color:#fff;border-bottom-right-radius:3px;}
+.mtime{font-size:10px;color:var(--muted);margin-top:3px;padding:0 4px;}
+.bot .mtime{text-align:left;}.user .mtime{text-align:right;}
+.chat-qr{padding:0 13px 9px;display:flex;gap:5px;flex-wrap:wrap;}
+.qrb{padding:6px 11px;border-radius:20px;background:var(--card2);border:1px solid var(--border2);font-size:11px;font-weight:700;color:var(--soft);cursor:pointer;font-family:'Nunito',sans-serif;transition:all .2s;}
+.qrb:hover{background:var(--pur);color:#fff;border-color:var(--pur);}
+.chat-inp-row{padding:11px 13px;border-top:1px solid var(--border2);display:flex;gap:8px;}
+.chat-inp{flex:1;background:var(--card2);border:1.5px solid var(--border2);border-radius:24px;padding:9px 13px;font-family:'Nunito',sans-serif;font-size:13px;color:var(--text);outline:none;transition:border-color .2s;}
+.chat-inp:focus{border-color:var(--pur2);}
+.chat-send{width:36px;height:36px;border-radius:50%;background:linear-gradient(135deg,var(--pur),var(--hot));border:none;color:#fff;cursor:pointer;display:flex;align-items:center;justify-content:center;font-size:16px;flex-shrink:0;}
+.typing-ind{display:flex;align-items:center;gap:4px;padding:10px 13px;background:var(--card2);border-radius:12px;width:fit-content;}
+.tdot2{width:7px;height:7px;border-radius:50%;background:var(--muted);animation:typingA 1.2s ease infinite;}
+.tdot2:nth-child(2){animation-delay:.2s;}.tdot2:nth-child(3){animation-delay:.4s;}
+@keyframes typingA{0%,60%,100%{transform:translateY(0)}30%{transform:translateY(-6px)}}
+
+/* TOAST */
+.toast{position:fixed;bottom:24px;left:50%;transform:translateX(-50%) translateY(80px);background:var(--card2);color:var(--gold2);padding:11px 22px;border-radius:50px;font-size:13px;font-weight:800;box-shadow:0 8px 28px rgba(0,0,0,.5);transition:transform .4s;z-index:9999;pointer-events:none;border:2px solid var(--pur);}
+.toast.show{transform:translateX(-50%) translateY(0);}
+.toast.success{color:#A8E6BE;border-color:var(--green);}
+.toast.error{color:#FF9090;border-color:var(--hot);}
+
+footer{background:var(--panel);border-top:1px solid var(--border2);padding:28px 16px 50px;text-align:center;margin-top:40px;}
+footer strong{color:var(--pur3);font-family:'Montserrat',sans-serif;font-size:17px;}
+footer p{color:var(--muted);font-size:12px;margin-top:6px;}
+.footer-links{display:flex;justify-content:center;flex-wrap:wrap;gap:8px 18px;margin-top:10px;}
+.footer-links a{font-size:12px;color:var(--muted);text-decoration:none;transition:color .2s;}
+.footer-links a:hover{color:var(--pur3);}
+
+/* ════════════════════════════════════════
+   ADMIN PANEL
+════════════════════════════════════════ */
+#adminLogin{display:none;position:fixed;inset:0;background:rgba(0,0,0,.85);z-index:600;align-items:center;justify-content:center;padding:20px;}
+#adminLogin.open{display:flex;}
+.login-box{background:var(--card);border-radius:var(--r2);padding:32px 26px;max-width:360px;width:100%;text-align:center;border:1px solid var(--border);box-shadow:var(--shadowp);}
+.login-box h2{font-size:22px;font-weight:900;color:var(--pur3);margin-bottom:4px;}
+.login-box p{font-size:13px;color:var(--muted);margin-bottom:22px;}
+.lf{margin-bottom:11px;text-align:left;}
+.lf label{font-size:10px;font-weight:800;letter-spacing:1px;text-transform:uppercase;color:var(--muted);display:block;margin-bottom:4px;}
+.lf input{width:100%;background:var(--card2);border:1.5px solid var(--border);border-radius:8px;padding:12px 14px;font-family:'Nunito',sans-serif;font-size:13.5px;color:var(--text);outline:none;transition:border-color .2s;}
+.lf input:focus{border-color:var(--pur2);}
+.login-hint{font-size:11px;color:rgba(139,0,255,.5);margin-top:8px;}
+#adminPanel{display:none;}
+.admin-topbar{background:linear-gradient(135deg,var(--panel),var(--card));padding:13px 20px;display:flex;align-items:center;justify-content:space-between;position:sticky;top:0;z-index:300;border-bottom:1px solid var(--border);}
+.atb-logo{font-family:'Montserrat',sans-serif;font-size:17px;font-weight:900;background:linear-gradient(135deg,var(--pur3),var(--hot2));-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;}
+.atb-logo small{display:block;font-size:9.5px;color:var(--muted);letter-spacing:1.5px;text-transform:uppercase;font-family:'Nunito',sans-serif;-webkit-text-fill-color:var(--muted);}
+.atb-right{display:flex;gap:8px;align-items:center;}
+.atb-user{font-size:12px;color:var(--muted);background:rgba(255,255,255,.05);padding:5px 12px;border-radius:6px;}
+.atb-back{background:transparent;border:1px solid var(--border2);color:var(--muted);padding:6px 14px;border-radius:6px;font-size:11.5px;font-weight:700;cursor:pointer;font-family:'Nunito',sans-serif;transition:all .2s;}
+.atb-back:hover{border-color:var(--pur3);color:var(--pur3);}
+.admin-layout{display:flex;min-height:calc(100vh - 55px);background:var(--bg);}
+.admin-sidebar{width:220px;flex-shrink:0;background:var(--panel);border-right:1px solid var(--border2);padding:16px 0;}
+.sb-sect{margin-bottom:6px;}
+.sb-label{font-size:9px;font-weight:800;letter-spacing:2px;text-transform:uppercase;color:rgba(139,0,255,.4);padding:4px 16px 7px;}
+.sb-item{display:flex;align-items:center;gap:9px;padding:10px 16px;font-size:12.5px;color:var(--muted);cursor:pointer;border-left:3px solid transparent;transition:all .2s;}
+.sb-item:hover{background:rgba(255,255,255,.03);color:var(--soft);}
+.sb-item.active{background:var(--purdim);color:var(--pur3);border-left-color:var(--pur);font-weight:700;}
+.sb-ico{width:18px;text-align:center;font-size:14px;}
+.sb-badge{margin-left:auto;background:var(--pur);color:#fff;font-size:10px;font-weight:800;padding:2px 7px;border-radius:10px;}
+.admin-main{flex:1;padding:22px;overflow-x:hidden;}
+.av{display:none;}.av.active{display:block;}
+.av-title{font-family:'Montserrat',sans-serif;font-size:24px;font-weight:900;color:var(--text);margin-bottom:3px;}
+.av-sub{font-size:13px;color:var(--muted);margin-bottom:22px;}
+.a-stats{display:grid;grid-template-columns:repeat(auto-fill,minmax(130px,1fr));gap:12px;margin-bottom:22px;}
+.a-stat{background:var(--card);border-radius:10px;padding:14px;border:1px solid var(--border2);border-left:4px solid var(--pur);}
+.asi{font-size:20px;margin-bottom:7px;}
+.asn{font-family:'Montserrat',sans-serif;font-size:26px;font-weight:900;color:var(--pur3);line-height:1;}
+.asl{font-size:10px;color:var(--muted);margin-top:2px;text-transform:uppercase;letter-spacing:.8px;}
+.a-table-wrap{background:var(--card);border-radius:10px;border:1px solid var(--border2);overflow:hidden;margin-bottom:20px;}
+.a-table-head{display:flex;align-items:center;justify-content:space-between;padding:13px 16px;border-bottom:1px solid var(--border2);}
+.a-table-head h3{font-size:14px;font-weight:800;color:var(--soft);}
+.a-add{padding:7px 14px;border-radius:6px;background:var(--pur);color:#fff;font-size:12px;font-weight:800;border:none;cursor:pointer;font-family:'Nunito',sans-serif;}
+.a-table{width:100%;border-collapse:collapse;}
+.a-table th{padding:9px 13px;text-align:left;font-size:10px;font-weight:800;letter-spacing:1px;text-transform:uppercase;color:var(--muted);border-bottom:1px solid var(--border2);background:rgba(255,255,255,.02);}
+.a-table td{padding:11px 13px;border-bottom:1px solid rgba(255,255,255,.03);font-size:12.5px;color:var(--soft);}
+.a-table tr:last-child td{border-bottom:none;}
+.a-table tr:hover td{background:rgba(255,255,255,.02);}
+.abadge{display:inline-block;font-size:10px;font-weight:800;padding:2px 8px;border-radius:10px;}
+.ab-pur{background:var(--purdim);color:var(--pur3);border:1px solid rgba(139,0,255,.2);}
+.ab-hot{background:var(--hotdim);color:var(--hot2);border:1px solid rgba(255,61,0,.2);}
+.ab-green{background:var(--greendim);color:var(--green);border:1px solid rgba(0,200,90,.2);}
+.ab-gold{background:var(--golddim);color:var(--gold2);border:1px solid var(--bordergold);}
+.ab-gray{background:rgba(255,255,255,.06);color:var(--muted);border:1px solid var(--border2);}
+.a-act{display:flex;gap:5px;}
+.a-btn{padding:4px 10px;border-radius:5px;font-size:11px;font-weight:700;cursor:pointer;border:none;font-family:'Nunito',sans-serif;}
+.a-btn-e{background:var(--purdim);color:var(--pur3);}
+.a-btn-a{background:var(--greendim);color:var(--green);}
+.a-btn-d{background:var(--hotdim);color:var(--hot2);}
+.status-sel{background:var(--card2);border:1px solid var(--border2);border-radius:6px;padding:4px 8px;font-family:'Nunito',sans-serif;font-size:11.5px;color:var(--soft);outline:none;}
+
+/* ══ AI TOOLS GUIDE (ADMIN) ══ */
+.ai-tool-grid{display:grid;grid-template-columns:1fr;gap:14px;}
+.ai-tool-card{background:var(--card);border-radius:var(--r);overflow:hidden;border:1px solid var(--border2);}
+.atc-head{padding:14px 16px;display:flex;align-items:center;gap:12px;}
+.atc-ico{width:46px;height:46px;border-radius:12px;display:flex;align-items:center;justify-content:center;font-size:22px;flex-shrink:0;}
+.atc-title h4{font-size:15px;font-weight:800;color:var(--text);}
+.atc-title p{font-size:11.5px;color:var(--muted);margin-top:2px;}
+.atc-body{padding:0 16px 16px;}
+.atc-service{font-size:10.5px;font-weight:800;letter-spacing:1px;text-transform:uppercase;margin-bottom:8px;}
+.tool-steps{list-style:none;display:flex;flex-direction:column;gap:7px;}
+.tool-step{display:flex;gap:9px;align-items:flex-start;padding:8px 11px;background:rgba(255,255,255,.03);border-radius:8px;border:1px solid var(--border2);}
+.ts-num{width:22px;height:22px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:11px;font-weight:800;flex-shrink:0;color:#000;}
+.ts-text{font-size:12px;color:var(--soft);line-height:1.55;flex:1;}
+.ts-text strong{color:var(--text);}
+.ts-text a{color:var(--pur3);text-decoration:none;font-weight:700;}
+.ts-text a:hover{text-decoration:underline;}
+.tool-link{display:inline-flex;align-items:center;gap:5px;margin-top:10px;padding:7px 14px;border-radius:20px;background:var(--purdim);color:var(--pur3);font-size:12px;font-weight:800;text-decoration:none;border:1px solid rgba(139,0,255,.25);transition:all .2s;}
+.tool-link:hover{background:var(--pur);color:#fff;}
+.sample-preview-box{background:var(--card2);border-radius:9px;padding:12px;border:1px solid var(--border2);margin-top:10px;}
+.spb-label{font-size:10px;font-weight:800;letter-spacing:1px;text-transform:uppercase;color:var(--gold2);margin-bottom:8px;display:flex;align-items:center;gap:5px;}
+.spb-content{font-size:12px;color:var(--soft);line-height:1.65;font-style:italic;}
+
+/* UPLOAD FORM (ADMIN DELIVERIES) */
+.admin-upload-form{background:var(--card);border-radius:10px;border:1px solid var(--border2);padding:20px;margin-bottom:18px;}
+.admin-upload-form h3{font-family:'Montserrat',sans-serif;font-size:18px;font-weight:900;color:var(--text);margin-bottom:14px;}
+.aup-grid{display:grid;grid-template-columns:1fr 1fr;gap:10px;}
+.aup-field{display:flex;flex-direction:column;gap:5px;}
+.aup-field.full{grid-column:1/-1;}
+.aup-field label{font-size:10px;font-weight:800;letter-spacing:1px;text-transform:uppercase;color:var(--muted);}
+.aup-field input,.aup-field select{background:var(--card2);border:1.5px solid var(--border);border-radius:7px;padding:10px 12px;font-family:'Nunito',sans-serif;font-size:13px;color:var(--text);outline:none;transition:border-color .2s;}
+.aup-field input:focus,.aup-field select:focus{border-color:var(--pur2);}
+.aup-field select option{background:var(--card);}
+.aup-submit{width:100%;margin-top:14px;padding:12px;border-radius:9px;background:linear-gradient(135deg,var(--pur),var(--hot));color:#fff;font-size:14px;font-weight:800;border:none;cursor:pointer;font-family:'Nunito',sans-serif;}
+
+/* SETTINGS */
+.settings-wrap{background:var(--card);border-radius:10px;border:1px solid var(--border2);padding:20px;margin-bottom:16px;}
+.settings-wrap h3{font-family:'Montserrat',sans-serif;font-size:17px;font-weight:900;color:var(--text);margin-bottom:14px;}
+
+/* ══ CONVERSION BOOSTERS ══ */
+.live-notif{position:fixed;bottom:90px;left:16px;z-index:800;max-width:300px;
+  background:#fff;border-radius:12px;box-shadow:0 8px 32px rgba(0,0,0,.18);
+  padding:12px 14px;display:flex;align-items:center;gap:10px;
+  animation:notifSlide .5s ease both;border-left:4px solid #FF6200;}
+.lang-dark .live-notif,.admin-dark .live-notif{background:#1C0A30;}
+@keyframes notifSlide{from{opacity:0;transform:translateX(-60px)}to{opacity:1;transform:translateX(0)}}
+.ln-ico{width:38px;height:38px;border-radius:50%;background:linear-gradient(135deg,#FF6200,#FF9A00);
+  display:flex;align-items:center;justify-content:center;font-size:18px;flex-shrink:0;}
+.ln-info strong{display:block;font-size:12.5px;font-weight:800;color:#1A1A2E;font-family:inherit;}
+.ln-info span{font-size:11px;color:#666;}
+.ln-close{margin-left:auto;background:none;border:none;font-size:14px;cursor:pointer;opacity:.4;padding:0 2px;}
+
+/* Social counter bar */
+.social-proof-bar{background:linear-gradient(90deg,rgba(0,200,90,.12),rgba(255,214,0,.08));
+  border:1px solid rgba(0,200,90,.2);border-radius:10px;padding:10px 16px;
+  display:flex;align-items:center;justify-content:center;gap:14px;flex-wrap:wrap;margin-bottom:14px;}
+.spb-item{display:flex;align-items:center;gap:6px;font-size:12px;font-weight:700;}
+.spb-n{font-size:18px;font-weight:900;color:#00C85A;}
+.spb-sep{opacity:.3;font-size:16px;}
+
+/* Sticky bottom CTA bar */
+.sticky-cta-bar{position:fixed;bottom:0;left:0;right:0;z-index:300;
+  background:linear-gradient(90deg,#FF3D00,#8B00FF,#FF3D00);background-size:200% 100%;
+  animation:gradMove 3s linear infinite;padding:12px 20px;
+  display:flex;align-items:center;justify-content:space-between;gap:10px;flex-wrap:wrap;}
+@keyframes gradMove{0%{background-position:0% 50%}50%{background-position:100% 50%}100%{background-position:0% 50%}}
+.scb-text{font-size:12.5px;font-weight:700;color:#fff;flex:1;}
+.scb-btn{display:inline-flex;align-items:center;gap:6px;padding:9px 20px;border-radius:24px;
+  background:#fff;color:#FF3D00;font-size:13px;font-weight:900;border:none;cursor:pointer;
+  font-family:inherit;white-space:nowrap;transition:transform .15s;}
+.scb-btn:hover{transform:scale(1.04);}
+.scb-close{background:rgba(255,255,255,.2);border:none;color:#fff;width:28px;height:28px;border-radius:50%;cursor:pointer;font-size:14px;flex-shrink:0;}
+body{padding-bottom:56px;}
+
+/* Pulse badge on prices */
+@keyframes pricepulse{0%,100%{transform:scale(1)}50%{transform:scale(1.06)}}
+.price-pulse{animation:pricepulse 2s ease infinite;}
+
+/* Live visitor counter */
+.visitor-counter{display:inline-flex;align-items:center;gap:6px;background:rgba(255,214,0,.12);
+  border:1px solid rgba(255,214,0,.25);border-radius:20px;padding:5px 12px;
+  font-size:11px;font-weight:700;margin-top:8px;}
+.vc-dot{width:7px;height:7px;border-radius:50%;background:#FFD600;animation:blink 1.5s ease infinite;}
+
+.kpi .kn{color:var(--pur3);}
+.cp-btn{color:var(--soft);font-family:'Nunito',sans-serif;}
+.chart-hdr h4{color:var(--text);font-family:'Montserrat',sans-serif;}
+
+/* ══ CONVERSION BOOSTERS ══ */
+.live-notif{position:fixed;bottom:90px;left:16px;z-index:800;max-width:300px;
+  background:#fff;border-radius:12px;box-shadow:0 8px 32px rgba(0,0,0,.18);
+  padding:12px 14px;display:flex;align-items:center;gap:10px;
+  animation:notifSlide .5s ease both;border-left:4px solid #FF6200;}
+.lang-dark .live-notif,.admin-dark .live-notif{background:#1C0A30;}
+@keyframes notifSlide{from{opacity:0;transform:translateX(-60px)}to{opacity:1;transform:translateX(0)}}
+.ln-ico{width:38px;height:38px;border-radius:50%;background:linear-gradient(135deg,#FF6200,#FF9A00);
+  display:flex;align-items:center;justify-content:center;font-size:18px;flex-shrink:0;}
+.ln-info strong{display:block;font-size:12.5px;font-weight:800;color:#1A1A2E;font-family:inherit;}
+.ln-info span{font-size:11px;color:#666;}
+.ln-close{margin-left:auto;background:none;border:none;font-size:14px;cursor:pointer;opacity:.4;padding:0 2px;}
+
+/* Social counter bar */
+.social-proof-bar{background:linear-gradient(90deg,rgba(0,200,90,.12),rgba(255,214,0,.08));
+  border:1px solid rgba(0,200,90,.2);border-radius:10px;padding:10px 16px;
+  display:flex;align-items:center;justify-content:center;gap:14px;flex-wrap:wrap;margin-bottom:14px;}
+.spb-item{display:flex;align-items:center;gap:6px;font-size:12px;font-weight:700;}
+.spb-n{font-size:18px;font-weight:900;color:#00C85A;}
+.spb-sep{opacity:.3;font-size:16px;}
+
+/* Sticky bottom CTA bar */
+.sticky-cta-bar{position:fixed;bottom:0;left:0;right:0;z-index:300;
+  background:linear-gradient(90deg,#FF3D00,#8B00FF,#FF3D00);background-size:200% 100%;
+  animation:gradMove 3s linear infinite;padding:12px 20px;
+  display:flex;align-items:center;justify-content:space-between;gap:10px;flex-wrap:wrap;}
+@keyframes gradMove{0%{background-position:0% 50%}50%{background-position:100% 50%}100%{background-position:0% 50%}}
+.scb-text{font-size:12.5px;font-weight:700;color:#fff;flex:1;}
+.scb-btn{display:inline-flex;align-items:center;gap:6px;padding:9px 20px;border-radius:24px;
+  background:#fff;color:#FF3D00;font-size:13px;font-weight:900;border:none;cursor:pointer;
+  font-family:inherit;white-space:nowrap;transition:transform .15s;}
+.scb-btn:hover{transform:scale(1.04);}
+.scb-close{background:rgba(255,255,255,.2);border:none;color:#fff;width:28px;height:28px;border-radius:50%;cursor:pointer;font-size:14px;flex-shrink:0;}
+body{padding-bottom:56px;}
+
+/* Pulse badge on prices */
+@keyframes pricepulse{0%,100%{transform:scale(1)}50%{transform:scale(1.06)}}
+.price-pulse{animation:pricepulse 2s ease infinite;}
+
+/* Live visitor counter */
+.visitor-counter{display:inline-flex;align-items:center;gap:6px;background:rgba(255,214,0,.12);
+  border:1px solid rgba(255,214,0,.25);border-radius:20px;padding:5px 12px;
+  font-size:11px;font-weight:700;margin-top:8px;}
+.vc-dot{width:7px;height:7px;border-radius:50%;background:#FFD600;animation:blink 1.5s ease infinite;}
+
+.kpi .kn{color:var(--pur3);}
+.cp-btn{font-family:'Nunito',sans-serif;}
+</style>
+</head>
+<body id="htmlRoot">
+
+<!-- ══ MAIN SITE ══ -->
+<div id="mainSite">
+
+<!-- TOP BAR -->
+<div class="topbar">
+  <div class="topbar-msg">
+    <span class="flash-dot"></span>
+    <span class="fr-i">🔥 PRIX RÉDUITS DE 50% — Offre limitée · Poster dès 2 500 FCFA</span>
+    <span class="en-i">🔥 PRICES CUT BY 50% — Limited offer · Poster from 2,500 FCFA</span>
+  </div>
+  <div class="lb-right">
+    <button class="lang-btn active" id="btnFR" onclick="setLang('fr')">🇫🇷 FR</button>
+    <button class="lang-btn" id="btnEN" onclick="setLang('en')">🇬🇧 EN</button>
+  </div>
+</div>
+
+<!-- TICKER -->
+<div class="ticker">
+  <div class="ticker-track">
+    <span class="fr-i">Poster IA 2 500 FCFA</span><span class="en-i">AI Poster 2,500 FCFA</span>
+    <span class="fr-i">Chanson personnalisée 3 500 FCFA</span><span class="en-i">Personalised Song 3,500 FCFA</span>
+    <span class="fr-i">Logo Pro 5 000 FCFA</span><span class="en-i">Pro Logo 5,000 FCFA</span>
+    <span class="fr-i">Vidéo IA 7 500 FCFA</span><span class="en-i">AI Video 7,500 FCFA</span>
+    <span class="fr-i">Livraison Express 2–24h</span><span class="en-i">Express Delivery 2–24h</span>
+    <span class="fr-i">Paiement MTN MoMo · Orange Money</span><span class="en-i">Pay MTN MoMo · Orange Money</span>
+    <span class="fr-i">Poster IA 2 500 FCFA</span><span class="en-i">AI Poster 2,500 FCFA</span>
+    <span class="fr-i">Chanson personnalisée 3 500 FCFA</span><span class="en-i">Personalised Song 3,500 FCFA</span>
+    <span class="fr-i">Logo Pro 5 000 FCFA</span><span class="en-i">Pro Logo 5,000 FCFA</span>
+    <span class="fr-i">Vidéo IA 7 500 FCFA</span><span class="en-i">AI Video 7,500 FCFA</span>
+    <span class="fr-i">Livraison Express 2–24h</span><span class="en-i">Express Delivery 2–24h</span>
+    <span class="fr-i">Paiement MTN MoMo · Orange Money</span><span class="en-i">Pay MTN MoMo · Orange Money</span>
+  </div>
+</div>
+
+<!-- HERO -->
+<header class="hero">
+  <div class="hero-grad"></div>
+  <div class="hero-mesh"></div>
+  <div class="hero-inner">
+
+    <!-- ANIMATED LOGO -->
+    <svg class="dx-logo" viewBox="0 0 90 90" xmlns="http://www.w3.org/2000/svg">
+      <defs>
+        <linearGradient id="rg" x1="0%" y1="0%" x2="100%" y2="100%">
+          <stop offset="0%" stop-color="#FF3D00"/><stop offset="33%" stop-color="#FFD600"/>
+          <stop offset="66%" stop-color="#8B00FF"/><stop offset="100%" stop-color="#00D4FF"/>
+        </linearGradient>
+        <filter id="gf"><feGaussianBlur stdDeviation="2.5" result="cb"/><feMerge><feMergeNode in="cb"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+      </defs>
+      <circle cx="45" cy="45" r="40" fill="none" stroke="url(#rg)" stroke-width="4" stroke-dasharray="180 72" stroke-linecap="round"/>
+      <circle cx="45" cy="45" r="27" fill="none" stroke="rgba(255,214,0,0.3)" stroke-width="1.5" stroke-dasharray="80 96"/>
+      <text x="45" y="56" fill="url(#rg)" font-size="30" font-weight="900" font-family="sans-serif" text-anchor="middle" filter="url(#gf)">⚡</text>
+    </svg>
+
+    <!-- COUNTDOWN -->
+    <div class="countdown-wrap">
+      <span class="cd-label fr-i">⏰ Offre -50% expire dans :</span>
+      <span class="cd-label en-i">⏰ -50% offer expires in :</span>
+      <div class="cd-units">
+        <div class="cdu"><span class="n" id="cd-h">23</span><span class="l">h</span></div>
+        <span class="cdu-sep">:</span>
+        <div class="cdu"><span class="n" id="cd-m">59</span><span class="l">min</span></div>
+        <span class="cdu-sep">:</span>
+        <div class="cdu"><span class="n" id="cd-s">59</span><span class="l">sec</span></div>
+      </div>
+    </div>
+
+    <div class="hero-live"><span class="live-dot"></span><span class="fr-i">Commandes ouvertes — Livraison 12–24h</span><span class="en-i">Orders open — Delivery 12–24h</span></div>
+
+    <h1 class="hero-h1 fr">Vos Créations IA<br>Prêtes en<br>12–24 Heures ⚡</h1>
+    <h1 class="hero-h1 en">Your AI Creations<br>Ready in<br>12–24 Hours ⚡</h1>
+
+    <p class="hero-sub fr">Posters d'anniversaire, vidéos, chansons, logos, flyers, reels et packs de branding — livrés en quelques heures par des IA de niveau professionnel.</p>
+    <p class="hero-sub en">Birthday posters, videos, songs, logos, flyers, reels and branding packs — delivered within hours by professional-level AI tools.</p>
+
+    <!-- PRICE SLASHED -->
+    <div class="price-slashed">
+      <div><div class="ps-old fr-i">Anciens prix</div><div class="ps-old en-i">Old prices</div></div>
+      <span style="font-size:22px;color:var(--hot);">→</span>
+      <div><div class="ps-new fr-i">-50% — Dès 2 500 FCFA</div><div class="ps-new en-i">-50% — From 2,500 FCFA</div></div>
+      <span class="ps-badge">-50%</span>
+    </div>
+
+    <div class="hero-ctas">
+      <button class="btn-fire" onclick="goTo('services')">
+        ⚡ <span class="fr-i">Voir les Services & Prix</span><span class="en-i">See Services & Prices</span>
+      </button>
+      <button class="btn-outline" onclick="goTo('order')">
+        <span class="fr-i">📋 Commander</span><span class="en-i">📋 Order Now</span>
+      </button>
+    </div>
+    
+<div class="social-proof-bar" style="margin-top:14px;">
+  <div class="spb-item"><span class="spb-n" data-target="1847">1 847</span><span>&nbsp;commandes livrées</span></div>
+  <span class="spb-sep">|</span>
+  <div class="spb-item"><span class="spb-n" style="color:var(--gold2);">⭐ 4.9/5</span><span>&nbsp;(234 avis)</span></div>
+  <span class="spb-sep">|</span>
+  <div class="spb-item"><span class="spb-n" data-target="43">43</span><span>&nbsp;commandes cette semaine</span></div>
+</div>
+<div class="visitor-counter" style="margin:10px auto 0;display:inline-flex;">
+  <span class="vc-dot"></span>
+  <span class="fr-i"><span class="vc-count">89</span> personnes visitent en ce moment</span>
+  <span class="en-i"><span class="vc-count">89</span> people visiting right now</span>
+</div>
+
+<div class="trust-row">
+      <span class="tbadge tb-pur">⚡ <span class="fr-i">Livraison Express dispo</span><span class="en-i">Express delivery available</span></span>
+      <span class="tbadge tb-gold">💰 <span class="fr-i">-50% sur tout</span><span class="en-i">-50% on everything</span></span>
+      <span class="tbadge tb-hot">🔥 <span class="fr-i">Qualité IA professionnelle</span><span class="en-i">Professional AI quality</span></span>
+    </div>
+  </div>
+  <svg class="wave" viewBox="0 0 1440 40" preserveAspectRatio="none">
+    <path d="M0,40 L0,16 C240,40 480,0 720,16 C960,32 1200,4 1440,16 L1440,40 Z" fill="#06020E"/>
+  </svg>
+</header>
+
+<!-- NAV -->
+<nav class="sticky-nav">
+  <div class="nav-inner">
+    <a href="#services" onclick="navClick(this)">Services</a>
+    <a href="#samples" onclick="navClick(this)"><span class="fr-i">🖼 Exemples</span><span class="en-i">🖼 Samples</span></a>
+    <a href="#delivery" onclick="navClick(this)"><span class="fr-i">⏱ Délais</span><span class="en-i">⏱ Timelines</span></a>
+    <a href="#payment" onclick="navClick(this)"><span class="fr-i">💳 Paiement</span><span class="en-i">💳 Payment</span></a>
+    <a href="#testimonials" onclick="navClick(this)"><span class="fr-i">⭐ Avis</span><span class="en-i">⭐ Reviews</span></a>
+    <a href="#contact" onclick="navClick(this)">Contact</a>
+    <button class="nav-admin-btn" onclick="showAdminLogin()">🔐 Admin</button>
+    <button class="nav-order" onclick="goTo('order')">⚡ <span class="fr-i">Commander</span><span class="en-i">Order</span></button>
+  </div>
+</nav>
+
+<div class="wrap">
+
+<!-- ══ SERVICES + PRICES ══ -->
+<div id="services" class="sec-head"><div class="line"></div><h2>⚡ <span class="fr-i">Services & Prix (-50%)</span><span class="en-i">Services & Prices (-50%)</span></h2><div class="line r"></div></div>
+<div class="svc-grid">
+
+  <!-- 1. Birthday Poster -->
+  <div class="svc-card" onclick="preSelect('AI Birthday Poster / Poster Anniversaire IA')">
+    <div class="svc-preview sp-birthday">
+      <span class="sample-label">SAMPLE</span>
+      <span class="svc-badge sb-ai">IA</span>
+      <div class="card-price"><span class="cp-old">5 000</span><span class="cp-new">2 500 FCFA</span><span class="cp-badge">-50%</span></div>
+      <svg viewBox="0 0 200 145" xmlns="http://www.w3.org/2000/svg" style="width:100%;height:100%">
+        <defs><radialGradient id="bg1" cx="50%" cy="50%" r="50%"><stop offset="0%" stop-color="#9B1FFF" stop-opacity=".5"/><stop offset="100%" stop-color="#4A0080" stop-opacity=".2"/></radialGradient></defs>
+        <rect width="200" height="145" fill="url(#bg1)"/>
+        <!-- Stars bg -->
+        <circle cx="20" cy="15" r="2" fill="#FFD600" opacity=".8"/><circle cx="180" cy="20" r="1.5" fill="#C080FF" opacity=".8"/><circle cx="170" cy="100" r="2" fill="#FF6B35" opacity=".7"/><circle cx="15" cy="110" r="1.5" fill="#00D4FF" opacity=".7"/>
+        <!-- Main poster card -->
+        <rect x="30" y="10" width="140" height="125" rx="10" fill="rgba(0,0,0,.4)" stroke="#C080FF" stroke-width="1.5"/>
+        <!-- Photo circle -->
+        <circle cx="100" cy="55" r="30" fill="rgba(139,0,255,.3)" stroke="#FFD600" stroke-width="2"/>
+        <text x="100" y="63" fill="#FFD600" font-size="28" text-anchor="middle">👩🏾</text>
+        <!-- Happy Birthday -->
+        <text x="100" y="100" fill="#FFD600" font-size="10" font-family="sans-serif" text-anchor="middle" font-weight="bold">🎂 HAPPY BIRTHDAY 🎂</text>
+        <!-- Name -->
+        <text x="100" y="114" fill="#fff" font-size="8" font-family="sans-serif" text-anchor="middle">AMINA — 25 ANS</text>
+        <!-- Balloons -->
+        <circle cx="45" cy="45" r="8" fill="#FF3D00" opacity=".6"/><circle cx="155" cy="40" r="7" fill="#8B00FF" opacity=".6"/>
+        <line x1="45" y1="53" x2="47" y2="70" stroke="#FF3D00" stroke-width="1" opacity=".5"/>
+        <line x1="155" y1="47" x2="153" y2="65" stroke="#8B00FF" stroke-width="1" opacity=".5"/>
+        <!-- Confetti -->
+        <rect x="70" y="18" width="5" height="5" rx="1" fill="#FFD600" opacity=".7" transform="rotate(25,72,20)"/>
+        <rect x="125" y="22" width="5" height="5" rx="1" fill="#00D4FF" opacity=".7" transform="rotate(-15,127,24)"/>
+      </svg>
+    </div>
+    <div class="svc-body">
+      <h4 class="fr">Poster Anniversaire IA</h4><h4 class="en">AI Birthday Poster</h4>
+      <p class="fr">Design personnalisé HD avec photo, nom, thème. Fichier PNG haute résolution prêt à partager.</p>
+      <p class="en">Personalised HD design with photo, name, theme. High-resolution PNG file ready to share.</p>
+      <div class="svc-meta"><span class="svc-time">⚡ 12–24h</span><button class="order-chip" onclick="preSelect('AI Birthday Poster / Poster Anniversaire IA')"><span class="fr-i">Commander</span><span class="en-i">Order</span> →</button></div>
+    </div>
+  </div>
+
+  <!-- 2. Birthday Video -->
+  <div class="svc-card" onclick="preSelect('AI Birthday Video / Vidéo Anniversaire IA')">
+    <div class="svc-preview sp-video">
+      <span class="sample-label">SAMPLE</span>
+      <span class="svc-badge sb-new">NEW</span>
+      <div class="card-price"><span class="cp-old">15 000</span><span class="cp-new">7 500 FCFA</span><span class="cp-badge">-50%</span></div>
+      <svg viewBox="0 0 200 145" xmlns="http://www.w3.org/2000/svg" style="width:100%;height:100%">
+        <rect width="200" height="145" fill="rgba(100,0,40,.3)"/>
+        <!-- Film frame -->
+        <rect x="20" y="15" width="160" height="100" rx="6" fill="rgba(0,0,0,.5)" stroke="#FF3D00" stroke-width="2"/>
+        <!-- Play circle -->
+        <circle cx="100" cy="65" r="25" fill="rgba(255,61,0,.5)" stroke="#FF6B35" stroke-width="2"/>
+        <polygon points="93,54 93,76 115,65" fill="#FFD600" opacity=".95"/>
+        <!-- Film strip -->
+        <rect x="20" y="118" width="160" height="14" fill="rgba(0,0,0,.5)"/>
+        <rect x="28" y="120" width="9" height="10" rx="1" fill="#FF3D00" opacity=".7"/>
+        <rect x="45" y="120" width="9" height="10" rx="1" fill="#FF3D00" opacity=".7"/>
+        <rect x="62" y="120" width="9" height="10" rx="1" fill="#FF3D00" opacity=".5"/>
+        <rect x="79" y="120" width="9" height="10" rx="1" fill="#FF3D00" opacity=".5"/>
+        <!-- Birthday emojis on screen -->
+        <text x="40" y="40" fill="#FFD600" font-size="16" opacity=".8">🎂</text>
+        <text x="148" y="42" fill="#FFD600" font-size="12" opacity=".6">✨</text>
+        <!-- Name text bar -->
+        <rect x="30" y="97" width="140" height="14" rx="4" fill="rgba(255,61,0,.4)"/>
+        <text x="100" y="108" fill="#fff" font-size="8" font-family="sans-serif" text-anchor="middle" font-weight="bold">VIDÉO ANNIVERSAIRE PERSONNALISÉE</text>
+      </svg>
+    </div>
+    <div class="svc-body">
+      <h4 class="fr">Vidéo Anniversaire IA</h4><h4 class="en">AI Birthday Video</h4>
+      <p class="fr">Vidéo animée avec photos, musique et effets spéciaux. Format MP4 prêt à envoyer sur WhatsApp.</p>
+      <p class="en">Animated video with photos, music and special effects. MP4 format ready to send on WhatsApp.</p>
+      <div class="svc-meta"><span class="svc-time">📅 24–48h</span><button class="order-chip order-chip-fire" onclick="preSelect('AI Birthday Video / Vidéo Anniversaire IA')"><span class="fr-i">Commander</span><span class="en-i">Order</span> →</button></div>
+    </div>
+  </div>
+
+  <!-- 3. Song -->
+  <div class="svc-card" onclick="preSelect('Personalised Song / Chanson Personnalisée')">
+    <div class="svc-preview sp-song">
+      <span class="sample-label">SAMPLE</span>
+      <span class="svc-badge sb-pop">🎵 AUDIO</span>
+      <div class="card-price"><span class="cp-old">7 000</span><span class="cp-new">3 500 FCFA</span><span class="cp-badge">-50%</span></div>
+      <svg viewBox="0 0 200 145" xmlns="http://www.w3.org/2000/svg" style="width:100%;height:100%">
+        <rect width="200" height="145" fill="rgba(0,60,80,.3)"/>
+        <!-- Waveform bars -->
+        <rect x="20" y="62" width="6" height="22" rx="3" fill="#00D4FF" opacity=".9"/>
+        <rect x="31" y="50" width="6" height="46" rx="3" fill="#00D4FF" opacity=".9"/>
+        <rect x="42" y="42" width="6" height="62" rx="3" fill="#66E8FF"/>
+        <rect x="53" y="55" width="6" height="36" rx="3" fill="#00D4FF" opacity=".8"/>
+        <rect x="64" y="60" width="6" height="26" rx="3" fill="#00D4FF" opacity=".7"/>
+        <rect x="75" y="45" width="6" height="56" rx="3" fill="#66E8FF"/>
+        <rect x="86" y="65" width="6" height="16" rx="3" fill="#00D4FF" opacity=".8"/>
+        <rect x="97" y="48" width="6" height="50" rx="3" fill="#66E8FF"/>
+        <rect x="108" y="57" width="6" height="32" rx="3" fill="#00D4FF" opacity=".8"/>
+        <rect x="119" y="40" width="6" height="66" rx="3" fill="#66E8FF"/>
+        <rect x="130" y="52" width="6" height="42" rx="3" fill="#00D4FF" opacity=".8"/>
+        <rect x="141" y="60" width="6" height="26" rx="3" fill="#00D4FF" opacity=".7"/>
+        <rect x="152" y="44" width="6" height="58" rx="3" fill="#66E8FF"/>
+        <rect x="163" y="58" width="6" height="30" rx="3" fill="#00D4FF" opacity=".7"/>
+        <!-- Label -->
+        <text x="100" y="120" fill="rgba(255,255,255,.5)" font-size="8" text-anchor="middle" font-family="sans-serif">🎵 CHANSON AU NOM DE [PRÉNOM] · STYLE AU CHOIX</text>
+        <!-- Music note floating -->
+        <text x="30" y="32" fill="#FFD600" font-size="18" opacity=".7">♪</text>
+        <text x="155" y="35" fill="#66E8FF" font-size="14" opacity=".6">♫</text>
+      </svg>
+    </div>
+    <div class="svc-body">
+      <h4 class="fr">Chanson Personnalisée IA</h4><h4 class="en">AI Personalised Song</h4>
+      <p class="fr">Chanson unique avec le prénom au choix : pop, gospel, afro, R&B. Fichier MP3 livré.</p>
+      <p class="en">Unique song with chosen name: pop, gospel, afro, R&B. MP3 file delivered.</p>
+      <div class="svc-meta"><span class="svc-time">⚡ 12–24h</span><button class="order-chip" onclick="preSelect('Personalised Song / Chanson Personnalisée')"><span class="fr-i">Commander</span><span class="en-i">Order</span> →</button></div>
+    </div>
+  </div>
+
+  <!-- 4. Business Flyer -->
+  <div class="svc-card" onclick="preSelect('Business Flyer / Flyer Business')">
+    <div class="svc-preview sp-biz">
+      <span class="sample-label">SAMPLE</span>
+      <span class="svc-badge sb-ai">IA</span>
+      <div class="card-price"><span class="cp-old">5 000</span><span class="cp-new">2 500 FCFA</span><span class="cp-badge">-50%</span></div>
+      <svg viewBox="0 0 200 145" xmlns="http://www.w3.org/2000/svg" style="width:100%;height:100%">
+        <rect width="200" height="145" fill="rgba(60,40,0,.3)"/>
+        <rect x="25" y="10" width="150" height="125" rx="8" fill="rgba(0,0,0,.4)" stroke="#FFD600" stroke-width="1.5"/>
+        <rect x="25" y="10" width="150" height="38" rx="8" fill="rgba(255,214,0,.25)"/>
+        <text x="100" y="34" fill="#FFD600" font-size="11" font-family="sans-serif" text-anchor="middle" font-weight="bold">🏪 VOTRE BUSINESS</text>
+        <!-- Logo area -->
+        <circle cx="55" cy="78" r="20" fill="rgba(255,214,0,.2)" stroke="#FFD600" stroke-width="1.5"/>
+        <text x="55" y="84" fill="#FFD600" font-size="16" text-anchor="middle">🏪</text>
+        <!-- Text lines -->
+        <rect x="84" y="62" width="80" height="6" rx="3" fill="rgba(255,255,255,.3)"/>
+        <rect x="84" y="74" width="68" height="4" rx="2" fill="rgba(255,255,255,.2)"/>
+        <rect x="84" y="84" width="58" height="4" rx="2" fill="rgba(255,255,255,.15)"/>
+        <!-- CTA -->
+        <rect x="40" y="106" width="120" height="18" rx="6" fill="#FFD600" opacity=".8"/>
+        <text x="100" y="119" fill="#000" font-size="9" font-family="sans-serif" text-anchor="middle" font-weight="bold">📞 CONTACTEZ-NOUS</text>
+      </svg>
+    </div>
+    <div class="svc-body">
+      <h4 class="fr">Flyer Business IA</h4><h4 class="en">AI Business Flyer</h4>
+      <p class="fr">Flyer pro pour votre entreprise, événements, promotions et services. Format HD partageable.</p>
+      <p class="en">Pro flyer for your business, events, promotions and services. Shareable HD format.</p>
+      <div class="svc-meta"><span class="svc-time">⚡ 12–24h</span><button class="order-chip" onclick="preSelect('Business Flyer / Flyer Business')"><span class="fr-i">Commander</span><span class="en-i">Order</span> →</button></div>
+    </div>
+  </div>
+
+  <!-- 5. Church Flyer -->
+  <div class="svc-card" onclick="preSelect('Church Flyer / Flyer Église')">
+    <div class="svc-preview sp-church">
+      <span class="sample-label">SAMPLE</span>
+      <span class="svc-badge sb-ai">IA</span>
+      <div class="card-price"><span class="cp-old">5 000</span><span class="cp-new">2 500 FCFA</span><span class="cp-badge">-50%</span></div>
+      <svg viewBox="0 0 200 145" xmlns="http://www.w3.org/2000/svg" style="width:100%;height:100%">
+        <rect width="200" height="145" fill="rgba(10,10,50,.4)"/>
+        <!-- Light rays -->
+        <line x1="100" y1="0" x2="50" y2="145" stroke="rgba(255,255,255,.06)" stroke-width="22"/>
+        <line x1="100" y1="0" x2="100" y2="145" stroke="rgba(255,255,255,.08)" stroke-width="18"/>
+        <line x1="100" y1="0" x2="150" y2="145" stroke="rgba(255,255,255,.06)" stroke-width="22"/>
+        <rect x="30" y="8" width="140" height="130" rx="8" fill="rgba(0,0,0,.35)" stroke="#9090FF" stroke-width="1.5"/>
+        <!-- Cross -->
+        <rect x="96" y="20" width="8" height="52" rx="2" fill="#FFD700" opacity=".9"/>
+        <rect x="82" y="32" width="36" height="8" rx="2" fill="#FFD700" opacity=".9"/>
+        <!-- Church text -->
+        <text x="100" y="96" fill="#FFD700" font-size="9" font-family="sans-serif" text-anchor="middle" font-weight="bold">CULTE DE RÉVEIL · DIMANCHE</text>
+        <text x="100" y="110" fill="rgba(255,255,255,.7)" font-size="8" font-family="sans-serif" text-anchor="middle">10H00 · Pasteur [NOM]</text>
+        <rect x="45" y="118" width="110" height="14" rx="5" fill="rgba(100,100,255,.4)"/>
+        <text x="100" y="129" fill="#fff" font-size="8" font-family="sans-serif" text-anchor="middle">🙏 TOUS SONT LES BIENVENUS</text>
+        <text x="40" y="48" fill="rgba(255,255,255,.4)" font-size="14">🕊</text>
+        <text x="148" y="52" fill="rgba(255,255,255,.35)" font-size="12">🕊</text>
+      </svg>
+    </div>
+    <div class="svc-body">
+      <h4 class="fr">Flyer Église & Événement</h4><h4 class="en">Church & Event Flyer</h4>
+      <p class="fr">Cultes, croisades, réveil, conférences spirituelles. Design sacré et impactant.</p>
+      <p class="en">Services, crusades, revivals, spiritual conferences. Sacred and impactful design.</p>
+      <div class="svc-meta"><span class="svc-time">⚡ 12–24h</span><button class="order-chip" onclick="preSelect('Church Flyer / Flyer Église')"><span class="fr-i">Commander</span><span class="en-i">Order</span> →</button></div>
+    </div>
+  </div>
+
+  <!-- 6. Facebook Ad -->
+  <div class="svc-card" onclick="preSelect('Facebook Ad Creative / Créatif Pub Facebook')">
+    <div class="svc-preview sp-ad">
+      <span class="sample-label">SAMPLE</span>
+      <span class="svc-badge sb-hot">🔥 ADS</span>
+      <div class="card-price"><span class="cp-old">7 000</span><span class="cp-new">3 500 FCFA</span><span class="cp-badge">-50%</span></div>
+      <svg viewBox="0 0 200 145" xmlns="http://www.w3.org/2000/svg" style="width:100%;height:100%">
+        <rect width="200" height="145" fill="rgba(60,25,0,.4)"/>
+        <!-- Phone -->
+        <rect x="65" y="5" width="70" height="133" rx="11" fill="rgba(0,0,0,.55)" stroke="#FF6B35" stroke-width="2"/>
+        <rect x="70" y="16" width="60" height="112" rx="5" fill="rgba(0,0,0,.35)"/>
+        <!-- FB header -->
+        <rect x="72" y="18" width="56" height="10" rx="2" fill="#1877F2" opacity=".9"/>
+        <text x="100" y="26.5" fill="#fff" font-size="7" font-family="sans-serif" text-anchor="middle" font-weight="bold">f FEED</text>
+        <!-- Ad image -->
+        <rect x="72" y="30" width="56" height="46" rx="2" fill="rgba(255,107,53,.35)"/>
+        <text x="100" y="58" fill="#FF6B35" font-size="22" text-anchor="middle">🎯</text>
+        <!-- Ad text -->
+        <rect x="74" y="79" width="42" height="5" rx="2" fill="rgba(255,255,255,.35)"/>
+        <rect x="74" y="87" width="36" height="4" rx="2" fill="rgba(255,255,255,.2)"/>
+        <!-- CTA button -->
+        <rect x="72" y="100" width="56" height="14" rx="4" fill="#FF3D00" opacity=".9"/>
+        <text x="100" y="110.5" fill="#fff" font-size="7.5" font-family="sans-serif" text-anchor="middle" font-weight="bold">ACHETER MAINTENANT</text>
+        <!-- Reactions -->
+        <text x="78" y="125" fill="#fff" font-size="8">❤👍😍</text>
+      </svg>
+    </div>
+    <div class="svc-body">
+      <h4 class="fr">Créatif Pub Facebook/Insta</h4><h4 class="en">Facebook/Insta Ad Creative</h4>
+      <p class="fr">Visuels optimisés pour vos campagnes Facebook et Instagram Ads qui convertissent.</p>
+      <p class="en">Visuals optimised for your Facebook and Instagram Ads campaigns that convert.</p>
+      <div class="svc-meta"><span class="svc-time">⚡ 12–24h</span><button class="order-chip order-chip-fire" onclick="preSelect('Facebook Ad Creative / Créatif Pub Facebook')"><span class="fr-i">Commander</span><span class="en-i">Order</span> →</button></div>
+    </div>
+  </div>
+
+  <!-- 7. Logo -->
+  <div class="svc-card" onclick="preSelect('Logo Design / Création Logo')">
+    <div class="svc-preview sp-logo">
+      <span class="sample-label">SAMPLE</span>
+      <span class="svc-badge sb-fire">⭐ TOP</span>
+      <div class="card-price"><span class="cp-old">10 000</span><span class="cp-new">5 000 FCFA</span><span class="cp-badge">-50%</span></div>
+      <svg viewBox="0 0 200 145" xmlns="http://www.w3.org/2000/svg" style="width:100%;height:100%">
+        <rect width="200" height="145" fill="rgba(0,50,20,.4)"/>
+        <circle cx="100" cy="65" r="38" fill="rgba(0,0,0,.4)" stroke="#00C85A" stroke-width="2"/>
+        <circle cx="100" cy="65" r="28" fill="rgba(0,200,90,.12)" stroke="rgba(0,200,90,.3)" stroke-width="1"/>
+        <text x="100" y="74" fill="#00C85A" font-size="28" text-anchor="middle" font-family="sans-serif" font-weight="bold">D</text>
+        <!-- Sparkles -->
+        <text x="52" y="35" fill="#00C85A" font-size="14" opacity=".8">✦</text>
+        <text x="148" y="42" fill="#66FF88" font-size="11" opacity=".7">✦</text>
+        <text x="58" y="100" fill="#00C85A" font-size="9" opacity=".6">✦</text>
+        <text x="144" y="95" fill="#00C85A" font-size="11" opacity=".7">✦</text>
+        <text x="100" y="115" fill="rgba(255,255,255,.4)" font-size="8" text-anchor="middle" font-family="sans-serif">YOUR BRAND NAME</text>
+        <text x="100" y="126" fill="rgba(0,200,90,.5)" font-size="7" text-anchor="middle" font-family="sans-serif">Livré en PNG · SVG · Transparent</text>
+      </svg>
+    </div>
+    <div class="svc-body">
+      <h4 class="fr">Création Logo Pro IA</h4><h4 class="en">AI Professional Logo</h4>
+      <p class="fr">Logo pro avec charte graphique. Livré PNG + SVG fond transparent. Prêt pour print & web.</p>
+      <p class="en">Professional logo with brand guidelines. PNG + SVG transparent background. Print & web ready.</p>
+      <div class="svc-meta"><span class="svc-time">📅 24–48h</span><button class="order-chip" onclick="preSelect('Logo Design / Création Logo')"><span class="fr-i">Commander</span><span class="en-i">Order</span> →</button></div>
+    </div>
+  </div>
+
+  <!-- 8. Promo Reel -->
+  <div class="svc-card" onclick="preSelect('Product Promo Reel / Reel Promo Produit')">
+    <div class="svc-preview sp-reel">
+      <span class="sample-label">SAMPLE</span>
+      <span class="svc-badge sb-new">🎬 REEL</span>
+      <div class="card-price"><span class="cp-old">15 000</span><span class="cp-new">7 500 FCFA</span><span class="cp-badge">-50%</span></div>
+      <svg viewBox="0 0 200 145" xmlns="http://www.w3.org/2000/svg" style="width:100%;height:100%">
+        <rect width="200" height="145" fill="rgba(50,0,70,.4)"/>
+        <rect x="68" y="5" width="64" height="133" rx="11" fill="rgba(0,0,0,.6)" stroke="#C080FF" stroke-width="2"/>
+        <rect x="73" y="16" width="54" height="96" rx="5" fill="rgba(139,0,255,.2)"/>
+        <circle cx="100" cy="57" r="22" fill="rgba(192,128,255,.3)" stroke="#C080FF" stroke-width="1.5"/>
+        <polygon points="94,47 94,67 113,57" fill="#FFD600" opacity=".95"/>
+        <rect x="73" y="85" width="54" height="4" rx="2" fill="rgba(255,255,255,.3)"/>
+        <rect x="73" y="93" width="42" height="3" rx="2" fill="rgba(255,255,255,.2)"/>
+        <rect x="73" y="100" width="54" height="10" rx="4" fill="rgba(192,128,255,.4)"/>
+        <text x="100" y="108" fill="#fff" font-size="6.5" font-family="sans-serif" text-anchor="middle">❤ VOTRE PRODUIT EN REEL</text>
+        <!-- Like reactions floating -->
+        <text x="45" y="65" fill="#FF3D00" font-size="16" opacity=".7">❤</text>
+        <text x="150" y="70" fill="#FFD600" font-size="13" opacity=".6">⭐</text>
+        <text x="40" y="90" fill="#C080FF" font-size="12" opacity=".5">💜</text>
+      </svg>
+    </div>
+    <div class="svc-body">
+      <h4 class="fr">Reel Promo Produit IA</h4><h4 class="en">AI Product Promo Reel</h4>
+      <p class="fr">Reel vertical IA pour Instagram & TikTok. Produit, service, événement. Format MP4 viral.</p>
+      <p class="en">AI vertical reel for Instagram & TikTok. Product, service, event. Viral MP4 format.</p>
+      <div class="svc-meta"><span class="svc-time">📅 24–72h</span><button class="order-chip order-chip-fire" onclick="preSelect('Product Promo Reel / Reel Promo Produit')"><span class="fr-i">Commander</span><span class="en-i">Order</span> →</button></div>
+    </div>
+  </div>
+
+  <!-- 9. Voice-over Script -->
+  <div class="svc-card" onclick="preSelect('Voice-over Script / Script Voice-over IA')">
+    <div class="svc-preview sp-voice">
+      <span class="sample-label">SAMPLE</span>
+      <span class="svc-badge sb-ai">IA</span>
+      <div class="card-price"><span class="cp-old">5 000</span><span class="cp-new">2 500 FCFA</span><span class="cp-badge">-50%</span></div>
+      <svg viewBox="0 0 200 145" xmlns="http://www.w3.org/2000/svg" style="width:100%;height:100%">
+        <rect width="200" height="145" fill="rgba(10,10,50,.4)"/>
+        <rect x="87" y="15" width="26" height="48" rx="13" fill="rgba(96,128,255,.4)" stroke="#6080FF" stroke-width="2"/>
+        <path d="M67 55 Q67 82 100 82 Q133 82 133 55" fill="none" stroke="#6080FF" stroke-width="2.5" stroke-linecap="round"/>
+        <line x1="100" y1="82" x2="100" y2="98" stroke="#6080FF" stroke-width="2.5"/>
+        <line x1="80" y1="98" x2="120" y2="98" stroke="#6080FF" stroke-width="2.5" stroke-linecap="round"/>
+        <rect x="25" y="108" width="150" height="4" rx="2" fill="rgba(255,255,255,.2)"/>
+        <rect x="25" y="117" width="120" height="4" rx="2" fill="rgba(255,255,255,.15)"/>
+        <rect x="25" y="126" width="135" height="4" rx="2" fill="rgba(255,255,255,.1)"/>
+        <circle cx="100" cy="42" r="42" fill="none" stroke="rgba(96,128,255,.18)" stroke-width="1"/>
+        <circle cx="100" cy="42" r="55" fill="none" stroke="rgba(96,128,255,.1)" stroke-width="1"/>
+        <text x="145" y="20" fill="#FFD600" font-size="12" opacity=".6">♪</text>
+        <text x="35" y="22" fill="#6080FF" font-size="10" opacity=".5">♫</text>
+      </svg>
+    </div>
+    <div class="svc-body">
+      <h4 class="fr">Script Voice-over IA</h4><h4 class="en">AI Voice-over Script</h4>
+      <p class="fr">Scripts pour publicités, présentations et voix off IA en français et anglais.</p>
+      <p class="en">Scripts for ads, presentations and AI voice-overs in French and English.</p>
+      <div class="svc-meta"><span class="svc-time">⚡ 12–24h</span><button class="order-chip" onclick="preSelect('Voice-over Script / Script Voice-over IA')"><span class="fr-i">Commander</span><span class="en-i">Order</span> →</button></div>
+    </div>
+  </div>
+
+  <!-- 10. BRANDING PACK -->
+  <div class="svc-card" style="grid-column:1/-1;" onclick="preSelect('AI Social Media Branding Pack / Pack Branding Complet')">
+    <div class="svc-preview sp-brand" style="height:110px;">
+      <span class="sample-label">SAMPLE — PACK COMPLET</span>
+      <span class="svc-badge sb-fire">⭐ BEST VALUE</span>
+      <div class="card-price"><span class="cp-old">25 000</span><span class="cp-new">12 500 FCFA</span><span class="cp-badge">-50%</span></div>
+      <svg viewBox="0 0 400 110" xmlns="http://www.w3.org/2000/svg" style="width:100%;height:100%">
+        <rect width="400" height="110" fill="rgba(40,0,60,.4)"/>
+        <rect x="10" y="10" width="65" height="90" rx="7" fill="rgba(255,255,255,.05)" stroke="#C080FF" stroke-width="1.5"/>
+        <text x="42" y="62" fill="#C080FF" font-size="22" text-anchor="middle">🖼</text>
+        <text x="42" y="80" fill="rgba(255,255,255,.4)" font-size="7" text-anchor="middle" font-family="sans-serif">Cover FB</text>
+        <rect x="85" y="10" width="65" height="90" rx="7" fill="rgba(255,255,255,.05)" stroke="#FFD600" stroke-width="1.5"/>
+        <text x="117" y="62" fill="#FFD600" font-size="22" text-anchor="middle">📸</text>
+        <text x="117" y="80" fill="rgba(255,255,255,.4)" font-size="7" text-anchor="middle" font-family="sans-serif">Post Template</text>
+        <rect x="160" y="10" width="65" height="90" rx="7" fill="rgba(255,255,255,.05)" stroke="#FF3D00" stroke-width="1.5"/>
+        <text x="192" y="62" fill="#FF3D00" font-size="22" text-anchor="middle">🎨</text>
+        <text x="192" y="80" fill="rgba(255,255,255,.4)" font-size="7" text-anchor="middle" font-family="sans-serif">Logo Pack</text>
+        <rect x="235" y="10" width="65" height="90" rx="7" fill="rgba(255,255,255,.05)" stroke="#00D4FF" stroke-width="1.5"/>
+        <text x="267" y="62" fill="#00D4FF" font-size="22" text-anchor="middle">📱</text>
+        <text x="267" y="80" fill="rgba(255,255,255,.4)" font-size="7" text-anchor="middle" font-family="sans-serif">Stories</text>
+        <rect x="310" y="10" width="80" height="90" rx="7" fill="rgba(139,0,255,.2)" stroke="#C080FF" stroke-width="2"/>
+        <text x="350" y="53" fill="#FFD600" font-size="15" text-anchor="middle" font-family="sans-serif" font-weight="bold">PACK</text>
+        <text x="350" y="67" fill="#C080FF" font-size="12" text-anchor="middle" font-family="sans-serif" font-weight="bold">COMPLET</text>
+        <text x="350" y="80" fill="rgba(255,255,255,.4)" font-size="7" text-anchor="middle" font-family="sans-serif">All-in-one</text>
+      </svg>
+    </div>
+    <div class="svc-body">
+      <h4 class="fr">Pack Branding Réseaux Sociaux IA</h4><h4 class="en">AI Social Media Branding Pack</h4>
+      <p class="fr">Pack complet : logo + cover Facebook + templates posts + stories + bio optimisée. Présence pro instantanée.</p>
+      <p class="en">Complete pack: logo + Facebook cover + post templates + stories + optimised bio. Instant professional presence.</p>
+      <div class="svc-meta">
+        <span class="svc-time">📅 24–48h · Meilleure valeur</span>
+        <button class="btn-fire" style="padding:9px 18px;border-radius:24px;font-size:12.5px;animation:none;" onclick="preSelect('AI Social Media Branding Pack / Pack Branding Complet')">
+          ⭐ <span class="fr-i">Commander le Pack</span><span class="en-i">Order the Pack</span>
+        </button>
+      </div>
+    </div>
+  </div>
+
+</div><!-- /svc-grid -->
+
+<!-- ══ BEFORE / AFTER COMPARE ══ -->
+<div id="samples" class="sec-head" style="margin-top:32px;"><div class="line"></div><h2>🖼 <span class="fr-i">Avant / Après — Nos Livraisons</span><span class="en-i">Before / After — Our Deliveries</span></h2><div class="line r"></div></div>
+<div class="compare-wrap">
+  <div class="compare-card cc-before">
+    <div class="cc-label fr-i">❌ Sans Digit-Excel5G</div>
+    <div class="cc-label en-i">❌ Without Digit-Excel5G</div>
+    <div class="cc-vis">📱</div>
+    <div class="cc-info fr">Post WhatsApp ordinaire, photo basique, pas de design</div>
+    <div class="cc-info en">Ordinary WhatsApp post, basic photo, no design</div>
+  </div>
+  <div class="compare-card cc-after">
+    <div class="cc-label fr-i">✅ Avec Digit-Excel5G</div>
+    <div class="cc-label en-i">✅ With Digit-Excel5G</div>
+    <div class="cc-vis" style="font-size:28px;">🎨✨</div>
+    <div class="cc-info fr">Poster IA HD professionnel, design impactant, partagé des centaines de fois</div>
+    <div class="cc-info en">Professional HD AI poster, impactful design, shared hundreds of times</div>
+  </div>
+</div>
+<div style="background:var(--card);border-radius:var(--r);padding:16px 18px;border:1px solid var(--border2);margin-bottom:14px;">
+  <p style="font-size:13px;color:var(--soft);line-height:1.75;" class="fr">🔥 <strong style="color:var(--pur3);">Nos livraisons font la différence :</strong> Chaque création est réalisée avec les meilleurs outils IA du marché (Midjourney, Suno AI, Runway ML, ElevenLabs…). Résultat : qualité studio livrée en 12–24h pour la moitié du prix d'un designer humain.</p>
+  <p style="font-size:13px;color:var(--soft);line-height:1.75;" class="en">🔥 <strong style="color:var(--pur3);">Our deliveries make the difference:</strong> Each creation is made with the best AI tools on the market (Midjourney, Suno AI, Runway ML, ElevenLabs…). Result: studio quality delivered in 12–24h at half the price of a human designer.</p>
+</div>
+
+<!-- ══ WHY US ══ -->
+<div class="sec-head" style="margin-top:28px;"><div class="line"></div><h2>💎 <span class="fr-i">Pourquoi nous choisir ?</span><span class="en-i">Why choose us?</span></h2><div class="line r"></div></div>
+<div class="why-grid">
+  <div class="why-card" style="animation-delay:.05s"><div class="wc-ico">⚡</div><h4 class="fr">Livraison Ultra-Rapide</h4><h4 class="en">Ultra-Fast Delivery</h4><p class="fr">12–24h standard, 2–24h express. Vous recevez votre fichier directement sur WhatsApp.</p><p class="en">12–24h standard, 2–24h express. File delivered directly to your WhatsApp.</p></div>
+  <div class="why-card" style="animation-delay:.1s"><div class="wc-ico">💰</div><h4 class="fr">-50% sur Tout</h4><h4 class="en">-50% on Everything</h4><p class="fr">Qualité professionnelle IA à la moitié du prix. Dès 2 500 FCFA seulement.</p><p class="en">Professional AI quality at half the price. From just 2,500 FCFA.</p></div>
+  <div class="why-card" style="animation-delay:.15s"><div class="wc-ico">🎨</div><h4 class="fr">Qualité IA Premium</h4><h4 class="en">Premium AI Quality</h4><p class="fr">Midjourney, Suno AI, Runway ML — les meilleurs outils IA du monde, pour vous.</p><p class="en">Midjourney, Suno AI, Runway ML — the world's best AI tools, for you.</p></div>
+  <div class="why-card" style="animation-delay:.2s"><div class="wc-ico">✅</div><h4 class="fr">Révisions Incluses</h4><h4 class="en">Revisions Included</h4><p class="fr">Si le résultat ne vous convient pas, nous le retravaillons jusqu'à votre satisfaction.</p><p class="en">If the result doesn't suit you, we rework it until you are satisfied.</p></div>
+  <div class="why-card" style="animation-delay:.25s"><div class="wc-ico">📱</div><h4 class="fr">Livraison WhatsApp</h4><h4 class="en">WhatsApp Delivery</h4><p class="fr">Fichiers envoyés directement sur votre WhatsApp. Aucune plateforme compliquée.</p><p class="en">Files sent directly to your WhatsApp. No complicated platform.</p></div>
+  <div class="why-card" style="animation-delay:.3s"><div class="wc-ico">🌍</div><h4 class="fr">Cameroun & Afrique</h4><h4 class="en">Cameroon & Africa</h4><p class="fr">Paiement MTN MoMo & Orange Money. On comprend vos besoins locaux.</p><p class="en">Payment via MTN MoMo & Orange Money. We understand your local needs.</p></div>
+</div>
+
+<!-- ══ DELIVERY TIMES ══ -->
+<div id="delivery" class="sec-head" style="margin-top:32px;"><div class="line"></div><h2>⏱ <span class="fr-i">Délais de Livraison</span><span class="en-i">Delivery Times</span></h2><div class="line r"></div></div>
+<div class="del-table">
+  <table>
+    <thead><tr><th class="fr-i">Service</th><th class="en-i">Service</th><th class="fr-i">Délai</th><th class="en-i">Delivery</th><th class="fr-i">Prix -50%</th><th class="en-i">Price -50%</th></tr></thead>
+    <tbody>
+      <tr><td class="fr">Poster / Flyer / Script</td><td class="en">Poster / Flyer / Script</td><td><span class="dchip dc-fast">12–24h</span></td><td><span style="color:var(--gold);font-weight:800;">2 500 FCFA</span></td></tr>
+      <tr><td class="fr">Chanson Personnalisée</td><td class="en">Personalised Song</td><td><span class="dchip dc-fast">12–24h</span></td><td><span style="color:var(--gold);font-weight:800;">3 500 FCFA</span></td></tr>
+      <tr><td class="fr">Logo / Pub Facebook</td><td class="en">Logo / Facebook Ad</td><td><span class="dchip dc-mid">24–48h</span></td><td><span style="color:var(--gold);font-weight:800;">3 500–5 000 FCFA</span></td></tr>
+      <tr><td class="fr">Vidéo / Reel Promo</td><td class="en">Video / Promo Reel</td><td><span class="dchip dc-mid">24–72h</span></td><td><span style="color:var(--gold);font-weight:800;">7 500 FCFA</span></td></tr>
+      <tr><td class="fr">🚀 Express (tous services)</td><td class="en">🚀 Express (all services)</td><td><span class="dchip dc-fire">2–24h</span></td><td><span style="color:var(--hot2);font-weight:800;">+ supplément</span></td></tr>
+      <tr><td class="fr">⭐ Pack Branding Complet</td><td class="en">⭐ Full Branding Pack</td><td><span class="dchip dc-mid">24–48h</span></td><td><span style="color:var(--gold);font-weight:800;">12 500 FCFA</span></td></tr>
+    </tbody>
+  </table>
+</div>
+
+<!-- ══ PAYMENT ══ -->
+<div id="payment" class="sec-head" style="margin-top:32px;"><div class="line"></div><h2>💳 <span class="fr-i">Paiement</span><span class="en-i">Payment</span></h2><div class="line r"></div></div>
+<div class="pay-card">
+  <div class="pay-stripe"></div>
+  <div class="pay-head">
+    <h3 class="fr">2 Méthodes de Paiement</h3><h3 class="en">2 Payment Methods</h3>
+    <p class="fr">Petits projets = paiement complet · Grands projets (Pack) = 50/50. Production démarre après confirmation.</p>
+    <p class="en">Small projects = full payment · Large projects (Pack) = 50/50. Production starts after confirmation.</p>
+  </div>
+  <div class="pay-methods">
+    <div class="pm pm-mtn">
+      <div class="pm-head"><div class="pm-ico">📱</div><div><h4>MTN Mobile Money</h4><p class="fr">Méthode recommandée</p><p class="en">Recommended method</p></div></div>
+      <div class="pm-num">
+        <div><div class="pn-label">MTN MoMo</div><div class="pn-num">673 567 253</div><div class="pn-name">DigitExcel Group</div></div>
+        <button class="copy-btn" onclick="copyNum('673567253','MTN MoMo')">📋 <span class="fr-i">Copier</span><span class="en-i">Copy</span></button>
+      </div>
+    </div>
+    <div class="pm pm-om">
+      <div class="pm-head"><div class="pm-ico">🟠</div><div><h4>Orange Money</h4><p class="fr">Paiement direct</p><p class="en">Direct payment</p></div></div>
+      <div class="pm-num">
+        <div><div class="pn-label">Orange Money</div><div class="pn-num">657 467 500</div><div class="pn-name">DigitExcel Group</div></div>
+        <button class="copy-btn" onclick="copyNum('657467500','Orange Money')">📋 <span class="fr-i">Copier</span><span class="en-i">Copy</span></button>
+      </div>
+    </div>
+  </div>
+  <div style="background:rgba(255,255,255,.03);padding:11px 16px;text-align:center;border-top:1px solid var(--border2);">
+    <p style="font-size:11.5px;color:var(--muted);" class="fr">⚡ Après paiement, envoyez votre preuve + détails sur WhatsApp — production démarre immédiatement.</p>
+    <p style="font-size:11.5px;color:var(--muted);" class="en">⚡ After payment, send your proof + details on WhatsApp — production starts immediately.</p>
+  </div>
+</div>
+
+<!-- ══ TESTIMONIALS ══ -->
+<div id="testimonials" class="sec-head" style="margin-top:32px;"><div class="line"></div><h2>⭐ <span class="fr-i">Clients Satisfaits</span><span class="en-i">Happy Clients</span></h2><div class="line r"></div></div>
+<div class="testi-carousel" id="testCarousel">
+  <div class="testi-track" id="testTrack">
+    <div class="testi-slide"><div class="testi-card"><div class="testi-stars">⭐⭐⭐⭐⭐</div>
+      <p class="fr">"J'ai commandé un poster d'anniversaire pour ma fille. Livré en 14h, qualité incroyable. Toute ma famille a demandé où j'avais trouvé ça. J'ai recommandé Digit-Excel5G à tout le monde !"</p>
+      <p class="en">"I ordered a birthday poster for my daughter. Delivered in 14h, incredible quality. My whole family asked where I found it. I recommended Digit-Excel5G to everyone!"</p>
+      <div class="testi-author"><div class="tav">👩🏾</div><div class="tinfo"><strong>Patience N.</strong><span>Douala, Cameroun 🇨🇲</span><span class="earn-badge fr-i">Poster livré en 14h</span><span class="earn-badge en-i">Poster delivered in 14h</span></div></div>
+    </div></div>
+    <div class="testi-slide"><div class="testi-card"><div class="testi-stars">⭐⭐⭐⭐⭐</div>
+      <p class="fr">"Le logo pour mon salon de coiffure est magnifique ! PNG + SVG transparent, prêt pour tout. Le prix de 5 000 FCFA pour un logo pro, c'est imbattable. Merci Digit-Excel5G !"</p>
+      <p class="en">"The logo for my hair salon is magnificent! PNG + SVG transparent, ready for everything. 5,000 FCFA for a professional logo is unbeatable. Thank you Digit-Excel5G!"</p>
+      <div class="testi-author"><div class="tav">👨🏿</div><div class="tinfo"><strong>Marcus T.</strong><span>Yaoundé, Cameroun 🇨🇲</span><span class="earn-badge fr-i">Logo Pro 5 000 FCFA</span><span class="earn-badge en-i">Pro Logo 5,000 FCFA</span></div></div>
+    </div></div>
+    <div class="testi-slide"><div class="testi-card"><div class="testi-stars">⭐⭐⭐⭐⭐</div>
+      <p class="fr">"La chanson personnalisée pour l'anniversaire de mon mari était parfaite. Style afro, son prénom dans le refrain. Il a pleuré de joie ! Qualité studio pour seulement 3 500 FCFA. Je reviendrai !"</p>
+      <p class="en">"The personalised song for my husband's birthday was perfect. Afro style, his name in the chorus. He cried with joy! Studio quality for only 3,500 FCFA. I'll be back!"</p>
+      <div class="testi-author"><div class="tav">👩🏽</div><div class="tinfo"><strong>Fatoumata D.</strong><span>Lagos, Nigeria 🇳🇬</span><span class="earn-badge fr-i">Chanson IA — Mari aux larmes de joie</span><span class="earn-badge en-i">AI Song — Husband moved to tears</span></div></div>
+    </div></div>
+    <div class="testi-slide"><div class="testi-card"><div class="testi-stars">⭐⭐⭐⭐⭐</div>
+      <p class="fr">"J'ai commandé le Pack Branding Complet pour mon business en ligne. Cover Facebook + Logo + Templates posts. En 36h j'avais tout. Mon engagement a triplé en 2 semaines. Investissement rentabilisé !"</p>
+      <p class="en">"I ordered the Full Branding Pack for my online business. Facebook Cover + Logo + Post Templates. In 36h I had everything. My engagement tripled in 2 weeks. Investment paid back!"</p>
+      <div class="testi-author"><div class="tav">👨🏾</div><div class="tinfo"><strong>Emmanuel A.</strong><span>Abuja, Nigeria 🇳🇬</span><span class="earn-badge fr-i">Engagement x3 en 2 semaines</span><span class="earn-badge en-i">Engagement x3 in 2 weeks</span></div></div>
+    </div></div>
+  </div>
+</div>
+<div class="testi-dots" id="testDots">
+  <div class="tdot active" onclick="goSlide(0)"></div><div class="tdot" onclick="goSlide(1)"></div>
+  <div class="tdot" onclick="goSlide(2)"></div><div class="tdot" onclick="goSlide(3)"></div>
+</div>
+<div class="testi-nav"><button class="tnav" onclick="prevSlide()">‹</button><button class="tnav" onclick="nextSlide()">›</button></div>
+
+<!-- ══ VIRAL / SHARE ══ -->
+<div class="viral-banner" style="margin-top:20px;">
+  <h3 class="fr">📢 Partagez — Vos Amis Vous Remercieront !</h3>
+  <h3 class="en">📢 Share — Your Friends Will Thank You!</h3>
+  <p class="fr">Prix réduits de 50% — partagez cette offre avec votre famille, amis et groupes WhatsApp. Aidez-les à avoir des créations professionnelles à petit prix.</p>
+  <p class="en">Prices cut by 50% — share this offer with your family, friends and WhatsApp groups. Help them get professional creations at low prices.</p>
+  <div class="share-btns">
+    <a class="sb-btn sb-wa" href="https://wa.me/?text=⚡%20DIGIT-EXCEL5G%20-%20Créations%20IA%20Professionnelles%20à%20-50%25%21%0APoster%20dès%202%20500%20FCFA%20%7C%20Logo%205%20000%20FCFA%20%7C%20Vidéo%207%20500%20FCFA%0ALivraison%2012-24h%20sur%20WhatsApp%20%F0%9F%94%A5" target="_blank">💬 WhatsApp</a>
+    <a class="sb-btn sb-fb" href="https://www.facebook.com/sharer/sharer.php?u=https://instagram.com/digitexcel5g" target="_blank">📘 Facebook</a>
+    <a class="sb-btn sb-tt" href="https://www.tiktok.com/@digitexcel5g" target="_blank">🎵 TikTok</a>
+    <a class="sb-btn sb-ig" href="https://instagram.com/digitexcel5g" target="_blank">📸 Instagram</a>
+  </div>
+</div>
+
+<!-- ══ ORDER FORM ══ -->
+<div id="order" class="sec-head" style="margin-top:32px;"><div class="line"></div><h2>⚡ <span class="fr-i">Passer Commande</span><span class="en-i">Place Your Order</span></h2><div class="line r"></div></div>
+<div class="order-form">
+  <h3 class="fr">COMMANDER UN SERVICE</h3><h3 class="en">ORDER A SERVICE</h3>
+  <p class="of-sub fr">Remplissez ce formulaire — production démarre dès confirmation de paiement. Livraison sur votre WhatsApp.</p>
+  <p class="of-sub en">Fill in this form — production starts as soon as payment is confirmed. Delivery to your WhatsApp.</p>
+  <div id="orderFormBody">
+    <div class="fgrid">
+      <div class="frow2">
+        <input id="o_name" placeholder="Nom / Name *" type="text"/>
+        <input id="o_wa" placeholder="WhatsApp *" type="tel"/>
+      </div>
+      <input id="o_email" placeholder="Email (optionnel)" type="email"/>
+      <select id="o_service">
+        <option value="" disabled selected>Service * (sélectionner / select)</option>
+        <option>AI Birthday Poster / Poster Anniversaire IA — 2 500 FCFA</option>
+        <option>AI Birthday Video / Vidéo Anniversaire IA — 7 500 FCFA</option>
+        <option>Personalised Song / Chanson Personnalisée — 3 500 FCFA</option>
+        <option>Business Flyer / Flyer Business — 2 500 FCFA</option>
+        <option>Church Flyer / Flyer Église — 2 500 FCFA</option>
+        <option>Facebook Ad Creative / Créatif Pub Facebook — 3 500 FCFA</option>
+        <option>Logo Design / Création Logo — 5 000 FCFA</option>
+        <option>Product Promo Reel / Reel Promo Produit — 7 500 FCFA</option>
+        <option>Voice-over Script / Script Voice-over IA — 2 500 FCFA</option>
+        <option>AI Social Media Branding Pack / Pack Branding Complet — 12 500 FCFA</option>
+      </select>
+      <select id="o_delivery">
+        <option>Livraison normale / Normal delivery (12–24h)</option>
+        <option>🚀 Livraison Express / Express delivery (2–24h) + supplément</option>
+      </select>
+      <select id="o_payment">
+        <option>MTN Mobile Money — 673 567 253</option>
+        <option>Orange Money — 657 467 500</option>
+      </select>
+      <textarea id="o_desc" placeholder="Détails complets / Full details : noms, dates, couleurs, style, textes, lien photos Google Drive…" rows="4"></textarea>
+    </div>
+    <button class="btn-fire" style="width:100%;padding:15px;border-radius:10px;font-size:15px;animation:none;" onclick="submitOrder()">
+      ⚡ <span class="fr-i">Envoyer ma Commande</span><span class="en-i">Send My Order</span>
+    </button>
+  </div>
+  <div class="success-box" id="orderSuccess">
+    <div class="si">🎉</div>
+    <h3 class="fr">Commande Confirmée !</h3><h3 class="en">Order Confirmed!</h3>
+    <p class="fr">Réf : <strong id="orderRef" style="color:var(--pur3);"></strong><br>Procédez au paiement pour démarrer la production. Livraison sur votre WhatsApp.</p>
+    <p class="en">Ref: <strong id="orderRef2" style="color:var(--pur3);"></strong><br>Complete payment to start production. Delivery to your WhatsApp.</p>
+  </div>
+</div>
+
+<!-- ══ CONTACT ══ -->
+<div id="contact" class="sec-head" style="margin-top:32px;"><div class="line"></div><h2>📞 Contact</h2><div class="line r"></div></div>
+<div class="contact-card">
+  <h3>Digit-Excel5G</h3>
+  <div class="cinfo-grid">
+    <div class="cinfo"><div class="cl">MTN MoMo</div><div class="cv">673 567 253</div></div>
+    <div class="cinfo"><div class="cl">Orange Money</div><div class="cv">657 467 500</div></div>
+    <div class="cinfo"><div class="cl">Email</div><div class="cv" style="font-size:12px;"><a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="adc9c4cac4d9c8d5cec8c199edcac0ccc4c183cec2c0">[email&#160;protected]</a></div></div>
+    <div class="cinfo"><div class="cl">Social</div><div class="cv">@digitexcel5g</div></div>
+  </div>
+  <div class="cta-row">
+    <a class="wa-cta" href="https://wa.me/237673567253?text=Bonjour%20Digit-Excel5G%20-%20Je%20veux%20commander%20un%20service" target="_blank">💬 673 567 253</a>
+    <a class="wa-cta" href="https://wa.me/237657467500?text=Hello%20Digit-Excel5G%20-%20I%20want%20to%20order" target="_blank">💬 657 467 500</a>
+  </div>
+  <div class="cta-row" style="margin-top:9px;">
+    <a class="ig-cta" href="https://instagram.com/digitexcel5g" target="_blank" style="flex:1;">📸 @digitexcel5g</a>
+    <a class="wa-cta" href="/cdn-cgi/l/email-protection#debab7b9b7aabba6bdbbb2ea9eb9b3bfb7b2f0bdb1b3" style="background:linear-gradient(135deg,var(--pur),var(--pur2));">✉ Email</a>
+  </div>
+</div>
+
+</div><!-- /wrap -->
+<footer>
+  <strong>Digit-Excel5G</strong>
+  <p class="fr">Services Créatifs IA · Posters · Vidéos · Logos · Reels · Branding · Prix -50%</p>
+  <p class="en">AI Creative Services · Posters · Videos · Logos · Reels · Branding · -50% Prices</p>
+  <div class="footer-links">
+    <a href="#services">Services</a>
+    <a href="#samples" class="fr-i">Exemples</a><a href="#samples" class="en-i">Samples</a>
+    <a href="#delivery" class="fr-i">Délais</a><a href="#delivery" class="en-i">Timelines</a>
+    <a href="#payment" class="fr-i">Paiement</a><a href="#payment" class="en-i">Payment</a>
+    <a href="#order" class="fr-i">Commander</a><a href="#order" class="en-i">Order</a>
+    <a href="#contact">Contact</a>
+  </div>
+  <p style="margin-top:14px;opacity:.3;font-size:11px;">Digit-Excel5G © 2026 · DigitExcel Group Hub</p>
+</footer>
+</div><!-- /mainSite -->
+
+<!-- ══ AI CHAT ══ -->
+<button class="ai-fab" id="chatFab" onclick="toggleChat()">🤖<span class="fab-badge">1</span></button>
+<div class="ai-chat-win" id="chatWin">
+  <div class="chat-hdr">
+    <div class="ch-av">⚡</div>
+    <div class="ch-info"><h4>Assistant Digit-Excel5G</h4><p class="fr-i">En ligne · Répond instantanément</p><p class="en-i">Online · Responds instantly</p></div>
+    <button class="ch-close" onclick="toggleChat()">✕</button>
+  </div>
+  <div class="chat-msgs" id="chatMsgs">
+    <div class="cmsg bot">
+      <div class="mbubble fr">Bonjour ! ⚡ Je suis l'assistant Digit-Excel5G. Aujourd'hui tous les prix sont à -50% ! Comment puis-je vous aider ?</div>
+      <div class="mbubble en">Hello! ⚡ I'm the Digit-Excel5G assistant. Today all prices are -50%! How can I help you?</div>
+      <div class="mtime">Maintenant</div>
+    </div>
+  </div>
+  <div class="chat-qr" id="chatQR">
+    <button class="qrb" onclick="chatQ('services')"><span class="fr-i">⚡ Services</span><span class="en-i">⚡ Services</span></button>
+    <button class="qrb" onclick="chatQ('prix')"><span class="fr-i">💰 Prix</span><span class="en-i">💰 Prices</span></button>
+    <button class="qrb" onclick="chatQ('delai')"><span class="fr-i">⏱ Délais</span><span class="en-i">⏱ Timelines</span></button>
+    <button class="qrb" onclick="chatQ('paiement')"><span class="fr-i">💳 Paiement</span><span class="en-i">💳 Payment</span></button>
+    <button class="qrb" onclick="chatQ('commander')"><span class="fr-i">📋 Commander</span><span class="en-i">📋 Order</span></button>
+  </div>
+  <div class="chat-inp-row">
+    <input class="chat-inp" id="chatInp" placeholder="Votre question… / Your question…" onkeydown="if(event.key==='Enter')sendChat()"/>
+    <button class="chat-send" onclick="sendChat()">➤</button>
+  </div>
+</div>
+
+<!-- ══ ADMIN LOGIN ══ -->
+<div id="adminLogin">
+  <div class="login-box">
+    <div style="font-size:40px;margin-bottom:12px;">🔐</div>
+    <h2>Admin Secret</h2>
+    <p>Digit-Excel5G — Dashboard Privé</p>
+    <div class="lf"><label>Identifiant</label><input type="text" id="loginUser" placeholder="admin"/></div>
+    <div class="lf"><label>Mot de passe</label><input type="password" id="loginPass" placeholder="••••••••" onkeydown="if(event.key==='Enter')doLogin()"/></div>
+    <button class="btn-pur" style="width:100%;padding:13px;border-radius:8px;" onclick="doLogin()">🔑 Connexion Admin</button>
+    <p class="login-hint">Accès: admin / dx5g2026</p>
+    <p style="margin-top:14px;"><a href="#" onclick="closeAdmin()" style="color:var(--muted);font-size:12px;">← Retour au site</a></p>
+  </div>
+</div>
+
+<!-- ══ ADMIN PANEL ══ -->
+<div id="adminPanel">
+  <div class="admin-topbar">
+    <div><div class="atb-logo">Digit-Excel5G<small>Admin Secret Dashboard</small></div></div>
+    <div class="atb-right">
+      <div class="atb-user">Admin</div>
+      <button class="atb-back" onclick="closeAdmin()">← Site</button>
+    </div>
+  </div>
+  <div class="admin-layout">
+    <!-- SIDEBAR -->
+    <aside class="admin-sidebar">
+      <div class="sb-sect">
+        <div class="sb-label">Dashboard</div>
+        <div class="sb-item active" onclick="switchView('dashboard',this)"><span class="sb-ico">📊</span> Overview</div>
+      </div>
+      <div class="sb-sect">
+        <div class="sb-label">Commandes</div>
+        <div class="sb-item" onclick="switchView('orders',this)"><span class="sb-ico">📋</span> Commandes <span class="sb-badge" id="ordBadge">0</span></div>
+        <div class="sb-item" onclick="switchView('deliveries',this)"><span class="sb-ico">📦</span> Livraisons</div>
+      </div>
+      <div class="sb-sect">
+        <div class="sb-label">🤖 GUIDE IA SECRET</div>
+        <div class="sb-item" onclick="switchView('ai-poster',this)"><span class="sb-ico">🎨</span> Poster / Flyer</div>
+        <div class="sb-item" onclick="switchView('ai-logo',this)"><span class="sb-ico">✨</span> Logo</div>
+        <div class="sb-item" onclick="switchView('ai-video',this)"><span class="sb-ico">🎬</span> Vidéo / Reel</div>
+        <div class="sb-item" onclick="switchView('ai-song',this)"><span class="sb-ico">🎵</span> Chanson</div>
+        <div class="sb-item" onclick="switchView('ai-voiceover',this)"><span class="sb-ico">🎙</span> Voice-over</div>
+        <div class="sb-item" onclick="switchView('ai-branding',this)"><span class="sb-ico">🌟</span> Branding Pack</div>
+      </div>
+      <div class="sb-sect">
+        <div class="sb-label">Système</div>
+        <div class="sb-item" onclick="switchView('settings',this)"><span class="sb-ico">⚙️</span> Paramètres</div>
+      </div>
+    </aside>
+
+    <!-- ADMIN MAIN -->
+    <main class="admin-main">
+
+      <!-- DASHBOARD -->
+      <div id="view-dashboard" class="av active">
+<div id="megaDashContainer"></div>
+        <div class="av-title">Dashboard Digit-Excel5G</div>
+        <div class="av-sub">Vue en temps réel des commandes et livraisons</div>
+        <div class="a-stats" id="dashStats">
+          <div class="a-stat"><div class="asi">📋</div><div class="asn" id="ds-orders">0</div><div class="asl">Commandes</div></div>
+          <div class="a-stat" style="border-left-color:var(--green);"><div class="asi">✅</div><div class="asn" id="ds-done" style="color:var(--green);">0</div><div class="asl">Terminées</div></div>
+          <div class="a-stat" style="border-left-color:var(--hot);"><div class="asi">⏳</div><div class="asn" id="ds-pending" style="color:var(--hot2);">0</div><div class="asl">En attente</div></div>
+          <div class="a-stat" style="border-left-color:var(--gold);"><div class="asi">📦</div><div class="asn" id="ds-deliveries" style="color:var(--gold2);">0</div><div class="asl">Livraisons</div></div>
+        </div>
+        <div class="a-table-wrap">
+          <div class="a-table-head"><h3>Dernières Commandes</h3></div>
+          <div id="dashOrders"></div>
+        </div>
+      </div>
+
+      <!-- ORDERS -->
+      <div id="view-orders" class="av">
+        <div class="av-title">Toutes les Commandes</div>
+        <div class="av-sub">Gérez les commandes Digit-Excel5G</div>
+        <div class="a-table-wrap">
+          <div class="a-table-head"><h3>Commandes</h3></div>
+          <table class="a-table">
+            <thead><tr><th>Réf</th><th>Client</th><th>Service</th><th>Livraison</th><th>Status</th><th>Date</th><th>Actions</th></tr></thead>
+            <tbody id="ordersBody"></tbody>
+          </table>
+        </div>
+      </div>
+
+      <!-- DELIVERIES -->
+      <div id="view-deliveries" class="av">
+        <div class="av-title">Créer une Livraison</div>
+        <div class="av-sub">Attachez le fichier final à une commande — le client le reçoit sur WhatsApp</div>
+        <div class="admin-upload-form">
+          <h3>📦 Nouvelle Livraison</h3>
+          <div class="aup-grid">
+            <div class="aup-field"><label>N° Commande</label><input type="text" id="d_orderid" placeholder="DX5G-2026-XXXX"/></div>
+            <div class="aup-field"><label>Type</label>
+              <select id="d_type"><option>Poster PNG HD</option><option>Vidéo MP4</option><option>Chanson MP3</option><option>Logo PNG+SVG</option><option>Reel MP4</option><option>Script PDF</option><option>Pack Branding ZIP</option></select>
+            </div>
+            <div class="aup-field full"><label>Lien Google Drive / Dropbox</label><input type="url" id="d_url" placeholder="https://drive.google.com/file/…"/></div>
+            <div class="aup-field full"><label>Message WhatsApp pour le client</label><input type="text" id="d_msg" placeholder="Bonjour ! Votre poster est prêt 🎉 Téléchargez-le ici :"/></div>
+          </div>
+          <button class="aup-submit" onclick="createDelivery()">📦 Créer la Livraison & Notifier</button>
+        </div>
+        <div class="a-table-wrap">
+          <div class="a-table-head"><h3>Livraisons créées</h3></div>
+          <table class="a-table">
+            <thead><tr><th>Commande</th><th>Type</th><th>Lien</th><th>Date</th></tr></thead>
+            <tbody id="deliveriesBody"></tbody>
+          </table>
+        </div>
+      </div>
+
+      <!-- ████████████ AI TOOLS GUIDE ████████████ -->
+
+      <!-- AI POSTER / FLYER -->
+      <div id="view-ai-poster" class="av">
+        <div class="av-title">🎨 Poster & Flyer — Guide IA Secret</div>
+        <div class="av-sub">Outils IA + procédures étape par étape pour livrer des posters et flyers professionnels</div>
+        <div class="ai-tool-grid">
+          <div class="ai-tool-card">
+            <div class="atc-head">
+              <div class="atc-ico" style="background:linear-gradient(135deg,#7B00FF,#C080FF);">🎨</div>
+              <div class="atc-title">
+                <h4>MIDJOURNEY — Génération Image IA #1</h4>
+                <p>Outil principal · Qualité cinématique · Résultats HD</p>
+              </div>
+            </div>
+            <div class="atc-body">
+              <div class="atc-service" style="color:var(--pur3);">🎯 POUR : Poster Anniversaire · Flyer Business · Flyer Église · Pub Facebook</div>
+              <ul class="tool-steps">
+                <li><div class="ts-num" style="background:linear-gradient(135deg,var(--pur),var(--pur2));">1</div><div class="ts-text">Aller sur <a href="https://midjourney.com" target="_blank">midjourney.com</a> → Se connecter via Discord → Rejoindre un serveur Midjourney</div></li>
+                <li><div class="ts-num" style="background:linear-gradient(135deg,var(--pur),var(--pur2));">2</div><div class="ts-text">Taper <strong>/imagine</strong> dans Discord puis écrire le prompt. Exemple poster anniversaire :<br><em style="color:var(--soft);">"Professional birthday poster for [NAME], age [AGE], theme [THEME], vibrant colors, HD, gold decorations, balloons, photorealistic, 4K --ar 4:5 --v 6.1"</em></div></li>
+                <li><div class="ts-num" style="background:linear-gradient(135deg,var(--pur),var(--pur2));">3</div><div class="ts-text">Attendre 30–60 secondes → Choisir la meilleure variante (U1-U4) → Upscale → Télécharger en HD</div></li>
+                <li><div class="ts-num" style="background:linear-gradient(135deg,var(--pur),var(--pur2));">4</div><div class="ts-text">Ouvrir <a href="https://canva.com" target="_blank">Canva.com</a> → Coller l'image → Ajouter nom, date, textes personnalisés avec les polices et couleurs du client</div></li>
+                <li><div class="ts-num" style="background:linear-gradient(135deg,var(--pur),var(--pur2));">5</div><div class="ts-text">Exporter PNG HD (minimum 2000x2500px) → Envoyer sur WhatsApp du client</div></li>
+              </ul>
+              <a class="tool-link" href="https://midjourney.com" target="_blank">🔗 Ouvrir Midjourney</a>
+            </div>
+          </div>
+          <div class="ai-tool-card">
+            <div class="atc-head">
+              <div class="atc-ico" style="background:linear-gradient(135deg,#FF6200,#FF9A00);">✨</div>
+              <div class="atc-title"><h4>ADOBE FIREFLY / CANVA IA — Alternative rapide</h4><p>Gratuit · Intégré dans Canva · Sans Discord</p></div>
+            </div>
+            <div class="atc-body">
+              <div class="atc-service" style="color:var(--hot2);">🎯 Alternative à Midjourney si pas d'abonnement</div>
+              <ul class="tool-steps">
+                <li><div class="ts-num" style="background:linear-gradient(135deg,var(--hot),var(--hot2));">1</div><div class="ts-text">Aller sur <a href="https://canva.com" target="_blank">canva.com</a> → Créer un compte gratuit → Cliquer "Créer un design" → Format poster (1080x1350)</div></li>
+                <li><div class="ts-num" style="background:linear-gradient(135deg,var(--hot),var(--hot2));">2</div><div class="ts-text">Cliquer <strong>"Apps"</strong> → Chercher <strong>"Magic Media"</strong> (IA Canva) → Décrire l'image voulue en français ou anglais → Générer</div></li>
+                <li><div class="ts-num" style="background:linear-gradient(135deg,var(--hot),var(--hot2));">3</div><div class="ts-text">Personnaliser : ajouter le nom du client, la date, les textes, les décorations depuis la bibliothèque Canva</div></li>
+                <li><div class="ts-num" style="background:linear-gradient(135deg,var(--hot),var(--hot2));">4</div><div class="ts-text">Télécharger en PNG HD → Livrer sur WhatsApp</div></li>
+              </ul>
+              <div class="sample-preview-box">
+                <div class="spb-label">📋 EXEMPLE DE PROMPT ANNIVERSAIRE</div>
+                <div class="spb-content">"Elegant birthday poster, beautiful African woman smiling, gold and purple theme, balloons, confetti, text space for name, professional photography style, studio lighting, high resolution"</div>
+              </div>
+              <a class="tool-link" href="https://canva.com" target="_blank">🔗 Ouvrir Canva</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- AI LOGO -->
+      <div id="view-ai-logo" class="av">
+        <div class="av-title">✨ Logo — Guide IA Secret</div>
+        <div class="av-sub">Créer des logos professionnels avec rendu transparent en 30 minutes</div>
+        <div class="ai-tool-grid">
+          <div class="ai-tool-card">
+            <div class="atc-head">
+              <div class="atc-ico" style="background:linear-gradient(135deg,#00C85A,#00FF70);">🎯</div>
+              <div class="atc-title"><h4>LOOKA.COM — Générateur Logo IA Pro #1</h4><p>Logos vectoriels · Export PNG+SVG · 5–10 minutes</p></div>
+            </div>
+            <div class="atc-body">
+              <div class="atc-service" style="color:var(--green);">🎯 POUR : Création Logo · Pack Branding</div>
+              <ul class="tool-steps">
+                <li><div class="ts-num" style="background:linear-gradient(135deg,#00C85A,#00FF70);color:#000;">1</div><div class="ts-text">Aller sur <a href="https://looka.com" target="_blank">looka.com</a> → Entrer le nom de l'entreprise du client → Choisir le secteur d'activité</div></li>
+                <li><div class="ts-num" style="background:linear-gradient(135deg,#00C85A,#00FF70);color:#000;">2</div><div class="ts-text">Choisir les couleurs et styles préférés du client (moderne, classique, ludique…) → Looka génère 100+ logos automatiquement</div></li>
+                <li><div class="ts-num" style="background:linear-gradient(135deg,#00C85A,#00FF70);color:#000;">3</div><div class="ts-text">Sélectionner le meilleur logo → Personnaliser : changer couleurs, police, icône, disposition → Prévisualiser sur carte de visite / site / t-shirt</div></li>
+                <li><div class="ts-num" style="background:linear-gradient(135deg,#00C85A,#00FF70);color:#000;">4</div><div class="ts-text">Télécharger PNG HD + SVG (fond transparent) → Livrer les 2 formats au client sur WhatsApp</div></li>
+              </ul>
+              <a class="tool-link" href="https://looka.com" target="_blank">🔗 Ouvrir Looka</a>
+            </div>
+          </div>
+          <div class="ai-tool-card">
+            <div class="atc-head">
+              <div class="atc-ico" style="background:linear-gradient(135deg,#0D47A1,#1877F2);">🌊</div>
+              <div class="atc-title"><h4>BRANDMARK.IO — Logo IA Alternatif</h4><p>Logos minimalistes · Gratuit pour aperçu · Qualité pro</p></div>
+            </div>
+            <div class="atc-body">
+              <div class="atc-service" style="color:#60A5FA;">🎯 Alternative premium à Looka</div>
+              <ul class="tool-steps">
+                <li><div class="ts-num" style="background:linear-gradient(135deg,#0D47A1,#1877F2);">1</div><div class="ts-text">Aller sur <a href="https://brandmark.io" target="_blank">brandmark.io</a> → Entrer nom + secteur + palette de couleurs</div></li>
+                <li><div class="ts-num" style="background:linear-gradient(135deg,#0D47A1,#1877F2);">2</div><div class="ts-text">Cliquer "Generate Logo" → Parcourir les variantes → Affiner les styles</div></li>
+                <li><div class="ts-num" style="background:linear-gradient(135deg,#0D47A1,#1877F2);">3</div><div class="ts-text">Télécharger le pack → PNG HD + SVG + Charte couleurs → Livrer</div></li>
+              </ul>
+              <div class="sample-preview-box">
+                <div class="spb-label">💡 ASTUCE PRO</div>
+                <div class="spb-content">Créer 3 variantes de logo différentes pour le client et lui envoyer en preview basse résolution → Il choisit → Vous livrez en HD après paiement confirmé.</div>
+              </div>
+              <a class="tool-link" href="https://brandmark.io" target="_blank">🔗 Ouvrir Brandmark</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- AI VIDEO / REEL -->
+      <div id="view-ai-video" class="av">
+        <div class="av-title">🎬 Vidéo & Reel — Guide IA Secret</div>
+        <div class="av-sub">Créer des vidéos IA professionnelles sans caméra ni montage complexe</div>
+        <div class="ai-tool-grid">
+          <div class="ai-tool-card">
+            <div class="atc-head">
+              <div class="atc-ico" style="background:linear-gradient(135deg,#FF3D00,#FF6B35);">🎬</div>
+              <div class="atc-title"><h4>RUNWAY ML — Génération Vidéo IA #1</h4><p>Vidéos IA · Animations · Effets cinématiques</p></div>
+            </div>
+            <div class="atc-body">
+              <div class="atc-service" style="color:var(--hot2);">🎯 POUR : Vidéo Anniversaire · Reel Promo Produit</div>
+              <ul class="tool-steps">
+                <li><div class="ts-num" style="background:linear-gradient(135deg,var(--hot),var(--hot2));">1</div><div class="ts-text">Aller sur <a href="https://runwayml.com" target="_blank">runwayml.com</a> → Créer compte gratuit → Choisir "Gen-2 Video" ou "Gen-3 Alpha"</div></li>
+                <li><div class="ts-num" style="background:linear-gradient(135deg,var(--hot),var(--hot2));">2</div><div class="ts-text">Uploader la photo du client (anniversaire) ou du produit → Écrire le prompt vidéo :<br><em style="color:var(--soft);">"Cinematic birthday animation, gold particles floating, elegant zoom in on portrait photo, warm festive atmosphere, 4K"</em></div></li>
+                <li><div class="ts-num" style="background:linear-gradient(135deg,var(--hot),var(--hot2));">3</div><div class="ts-text">Générer → Choisir la meilleure séquence → Télécharger MP4</div></li>
+                <li><div class="ts-num" style="background:linear-gradient(135deg,var(--hot),var(--hot2));">4</div><div class="ts-text">Ouvrir <a href="https://capcut.com" target="_blank">CapCut</a> → Ajouter la vidéo Runway → Ajouter musique IA (Suno) + textes + effets → Exporter MP4 HD</div></li>
+                <li><div class="ts-num" style="background:linear-gradient(135deg,var(--hot),var(--hot2));">5</div><div class="ts-text">Pour Reels TikTok/Instagram : format vertical 9:16 → Ajouter sous-titres animés → Exporter MP4 1080x1920</div></li>
+              </ul>
+              <a class="tool-link" href="https://runwayml.com" target="_blank">🔗 Ouvrir Runway ML</a>
+              <a class="tool-link" href="https://capcut.com" target="_blank" style="margin-left:8px;">🔗 Ouvrir CapCut</a>
+            </div>
+          </div>
+          <div class="ai-tool-card">
+            <div class="atc-head">
+              <div class="atc-ico" style="background:linear-gradient(135deg,#8B00FF,#C080FF);">🎥</div>
+              <div class="atc-title"><h4>INVIDEO AI — Vidéo à partir de texte</h4><p>Gratuit · Voix off IA · Sous-titres auto · Parfait pour Reels</p></div>
+            </div>
+            <div class="atc-body">
+              <div class="atc-service" style="color:var(--pur3);">🎯 POUR : Reel Promo Produit · Pub Vidéo Facebook</div>
+              <ul class="tool-steps">
+                <li><div class="ts-num" style="background:linear-gradient(135deg,var(--pur),var(--pur2));">1</div><div class="ts-text">Aller sur <a href="https://invideo.io" target="_blank">invideo.io</a> → Créer compte gratuit → Cliquer "AI Video" → "Text to Video"</div></li>
+                <li><div class="ts-num" style="background:linear-gradient(135deg,var(--pur),var(--pur2));">2</div><div class="ts-text">Décrire la vidéo en français ou anglais : <em style="color:var(--soft);">"Publicité courte 30 secondes pour [PRODUIT], style moderne dynamique, public africain, avec musique afrobeat"</em></div></li>
+                <li><div class="ts-num" style="background:linear-gradient(135deg,var(--pur),var(--pur2));">3</div><div class="ts-text">InVideo génère automatiquement : images, textes, voix off → Personnaliser chaque scène → Exporter MP4</div></li>
+              </ul>
+              <div class="sample-preview-box">
+                <div class="spb-label">💡 PROMPT REEL PRODUIT</div>
+                <div class="spb-content">"30-second promo reel for [PRODUCT NAME], vertical format 9:16, vibrant African market aesthetic, fast cuts, text overlays showing price and benefits, call to action at end: 'Order on WhatsApp 657467500'"</div>
+              </div>
+              <a class="tool-link" href="https://invideo.io" target="_blank">🔗 Ouvrir InVideo AI</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- AI SONG -->
+      <div id="view-ai-song" class="av">
+        <div class="av-title">🎵 Chanson Personnalisée — Guide IA Secret</div>
+        <div class="av-sub">Créer des chansons uniques avec le prénom du client en 15 minutes</div>
+        <div class="ai-tool-grid">
+          <div class="ai-tool-card">
+            <div class="atc-head">
+              <div class="atc-ico" style="background:linear-gradient(135deg,#00D4FF,#0088CC);">🎵</div>
+              <div class="atc-title"><h4>SUNO AI — Générateur de Chansons #1</h4><p>Gratuit · Paroles personnalisées · Qualité studio · 50 créations/jour</p></div>
+            </div>
+            <div class="atc-body">
+              <div class="atc-service" style="color:var(--cyan2);">🎯 POUR : Chanson Anniversaire Personnalisée</div>
+              <ul class="tool-steps">
+                <li><div class="ts-num" style="background:linear-gradient(135deg,#00D4FF,#0088CC);color:#000;">1</div><div class="ts-text">Aller sur <a href="https://suno.com" target="_blank">suno.com</a> → Se connecter → Cliquer "Create" → Activer "Custom Mode"</div></li>
+                <li><div class="ts-num" style="background:linear-gradient(135deg,#00D4FF,#0088CC);color:#000;">2</div><div class="ts-text">Dans "Lyrics" écrire les paroles personnalisées avec le prénom du client. Exemple :<br><em style="color:var(--soft);">[Verse 1] Today is your special day, [PRÉNOM] shine bright / The whole world celebrates you tonight... [Chorus] Happy Birthday [PRÉNOM] 🎉</em></div></li>
+                <li><div class="ts-num" style="background:linear-gradient(135deg,#00D4FF,#0088CC);color:#000;">3</div><div class="ts-text">Dans "Style of Music" écrire le genre voulu : <em style="color:var(--soft);">"Afrobeat joyeux, voix féminine, tempo festif"</em> ou <em style="color:var(--soft);">"Gospel africain, chœur, célébration"</em></div></li>
+                <li><div class="ts-num" style="background:linear-gradient(135deg,#00D4FF,#0088CC);color:#000;">4</div><div class="ts-text">Générer → Écouter les 2 versions → Choisir la meilleure → Télécharger MP3 → Livrer sur WhatsApp</div></li>
+              </ul>
+              <div class="sample-preview-box">
+                <div class="spb-label">📋 EXEMPLE STYLE SUNO</div>
+                <div class="spb-content">Style: "Afrobeat festif, voix masculine chaleureuse, guitare acoustique, percussions africaines, 120 BPM, mixage professionnel, mélodie joyeuse et mémorable, production moderne"</div>
+              </div>
+              <a class="tool-link" href="https://suno.com" target="_blank">🔗 Ouvrir Suno AI</a>
+            </div>
+          </div>
+          <div class="ai-tool-card">
+            <div class="atc-head">
+              <div class="atc-ico" style="background:linear-gradient(135deg,#FF3D00,#FF8C00);">🎼</div>
+              <div class="atc-title"><h4>UDIO.COM — Alternative Suno (qualité supérieure)</h4><p>Meilleure qualité audio · Paroles personnalisées</p></div>
+            </div>
+            <div class="atc-body">
+              <div class="atc-service" style="color:var(--hot2);">🎯 Alternative premium à Suno</div>
+              <ul class="tool-steps">
+                <li><div class="ts-num" style="background:linear-gradient(135deg,var(--hot),var(--hot2));">1</div><div class="ts-text">Aller sur <a href="https://udio.com" target="_blank">udio.com</a> → Se connecter → Entrer le prompt musical</div></li>
+                <li><div class="ts-num" style="background:linear-gradient(135deg,var(--hot),var(--hot2));">2</div><div class="ts-text">Format prompt Udio : <em style="color:var(--soft);">"Birthday song for [NAME], afrobeat, joyful, personalized with name in chorus, professional studio quality"</em></div></li>
+                <li><div class="ts-num" style="background:linear-gradient(135deg,var(--hot),var(--hot2));">3</div><div class="ts-text">Générer → Télécharger la meilleure version → Compresser pour WhatsApp (max 16 MB)</div></li>
+              </ul>
+              <a class="tool-link" href="https://udio.com" target="_blank">🔗 Ouvrir Udio</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- AI VOICEOVER -->
+      <div id="view-ai-voiceover" class="av">
+        <div class="av-title">🎙 Script & Voice-over — Guide IA Secret</div>
+        <div class="av-sub">Écrire et voix-over des scripts publicitaires avec l'IA</div>
+        <div class="ai-tool-grid">
+          <div class="ai-tool-card">
+            <div class="atc-head">
+              <div class="atc-ico" style="background:linear-gradient(135deg,#6080FF,#3040CC);">✍️</div>
+              <div class="atc-title"><h4>CHATGPT — Rédaction Script #1</h4><p>Gratuit · Bilingue FR/EN · Scripts publicitaires en 2 minutes</p></div>
+            </div>
+            <div class="atc-body">
+              <div class="atc-service" style="color:#60A5FA;">🎯 POUR : Script Voice-over · Copywriting · Textes Pub</div>
+              <ul class="tool-steps">
+                <li><div class="ts-num" style="background:linear-gradient(135deg,#6080FF,#3040CC);">1</div><div class="ts-text">Aller sur <a href="https://chat.openai.com" target="_blank">chat.openai.com</a> → Modèle GPT-4o gratuit</div></li>
+                <li><div class="ts-num" style="background:linear-gradient(135deg,#6080FF,#3040CC);">2</div><div class="ts-text">Copier-coller ce prompt : <em style="color:var(--soft);">"Écris un script publicitaire de 30 secondes pour [PRODUIT/SERVICE] destiné au marché camerounais. Ton : dynamique et chaleureux. Inclure un appel à l'action WhatsApp. Format : narration + textes d'écran"</em></div></li>
+                <li><div class="ts-num" style="background:linear-gradient(135deg,#6080FF,#3040CC);">3</div><div class="ts-text">Copier le script → Passer à ElevenLabs pour la voix off → Livrer PDF + MP3 au client</div></li>
+              </ul>
+              <a class="tool-link" href="https://chat.openai.com" target="_blank">🔗 Ouvrir ChatGPT</a>
+            </div>
+          </div>
+          <div class="ai-tool-card">
+            <div class="atc-head">
+              <div class="atc-ico" style="background:linear-gradient(135deg,#FF6B35,#FF3D00);">🎙</div>
+              <div class="atc-title"><h4>ELEVENLABS — Voix IA Réaliste</h4><p>Voix humaines IA · Français · Anglais · 10 000 caractères gratuits/mois</p></div>
+            </div>
+            <div class="atc-body">
+              <div class="atc-service" style="color:var(--hot2);">🎯 POUR : Voice-over sur vidéos · Publicités audio · Reels narration</div>
+              <ul class="tool-steps">
+                <li><div class="ts-num" style="background:linear-gradient(135deg,var(--hot),var(--hot2));">1</div><div class="ts-text">Aller sur <a href="https://elevenlabs.io" target="_blank">elevenlabs.io</a> → Créer compte gratuit</div></li>
+                <li><div class="ts-num" style="background:linear-gradient(135deg,var(--hot),var(--hot2));">2</div><div class="ts-text">Cliquer "Speech Synthesis" → Coller le script ChatGPT → Choisir une voix : <strong>"Charlotte"</strong> (voix féminine française) ou <strong>"Adam"</strong> (voix masculine)</div></li>
+                <li><div class="ts-num" style="background:linear-gradient(135deg,var(--hot),var(--hot2));">3</div><div class="ts-text">Ajuster vitesse et ton → Générer → Télécharger MP3 → Importer dans InVideo ou CapCut pour la vidéo</div></li>
+                <li><div class="ts-num" style="background:linear-gradient(135deg,var(--hot),var(--hot2));">4</div><div class="ts-text">Livrer au client : Script PDF + MP3 voice-over sur WhatsApp</div></li>
+              </ul>
+              <a class="tool-link" href="https://elevenlabs.io" target="_blank">🔗 Ouvrir ElevenLabs</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- AI BRANDING PACK -->
+      <div id="view-ai-branding" class="av">
+        <div class="av-title">🌟 Pack Branding Complet — Guide IA Secret</div>
+        <div class="av-sub">Processus complet pour livrer un pack branding professionnel en 24–48h</div>
+        <div class="ai-tool-grid">
+          <div class="ai-tool-card">
+            <div class="atc-head">
+              <div class="atc-ico" style="background:linear-gradient(135deg,var(--pur),var(--hot));">🌟</div>
+              <div class="atc-title"><h4>PROCESSUS COMPLET PACK BRANDING</h4><p>Logo + Cover + Templates + Stories + Bio — 24–48h · 12 500 FCFA</p></div>
+            </div>
+            <div class="atc-body">
+              <div class="atc-service" style="background:linear-gradient(135deg,var(--pur),var(--hot));-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;">🎯 COMMANDE LA PLUS RENTABLE — Procédure complète</div>
+              <ul class="tool-steps">
+                <li><div class="ts-num" style="background:linear-gradient(135deg,var(--pur),var(--pur2));">1</div><div class="ts-text"><strong>LOGO (Looka.com — 10 min) :</strong> Créer le logo sur looka.com → Télécharger PNG + SVG transparent → Palette de couleurs officielle</div></li>
+                <li><div class="ts-num" style="background:linear-gradient(135deg,var(--pur),var(--pur2));">2</div><div class="ts-text"><strong>COVER FACEBOOK (Canva — 10 min) :</strong> Format 820x312px → Utiliser le logo + couleurs → Image Midjourney en fond → Nom business + slogan + contacts</div></li>
+                <li><div class="ts-num" style="background:linear-gradient(135deg,var(--pur),var(--pur2));">3</div><div class="ts-text"><strong>TEMPLATES POSTS (Canva — 20 min) :</strong> Créer 5 templates de posts différents (annonce, promo, citation, produit, témoignage) en format 1080x1080px → Même charte graphique</div></li>
+                <li><div class="ts-num" style="background:linear-gradient(135deg,var(--pur),var(--pur2));">4</div><div class="ts-text"><strong>STORIES (Canva — 10 min) :</strong> 2 templates Stories 1080x1920px → Format vertical → CTA "Swipe up" ou lien WhatsApp</div></li>
+                <li><div class="ts-num" style="background:linear-gradient(135deg,var(--pur),var(--pur2));">5</div><div class="ts-text"><strong>BIO OPTIMISÉE (ChatGPT — 5 min) :</strong> Prompt → "Écris une bio Instagram professionnelle pour [BUSINESS] en 150 caractères avec emojis, secteur [X]" → 3 variantes</div></li>
+                <li><div class="ts-num" style="background:linear-gradient(135deg,var(--hot),var(--hot2));">6</div><div class="ts-text"><strong>LIVRAISON :</strong> Zipper tous les fichiers → Google Drive → Lien de téléchargement → Envoyer sur WhatsApp du client avec instructions d'utilisation</div></li>
+              </ul>
+              <div class="sample-preview-box">
+                <div class="spb-label">💡 ASTUCE — MAXIMUM PROFIT</div>
+                <div class="spb-content">Proposez toujours le Pack Branding en UPSELL après une commande poster/logo. Script WhatsApp : "Bonjour [NOM], votre logo est prêt ! Pour avoir un look 100% professionnel sur Facebook et Instagram, nous avons aussi le Pack Branding Complet (Cover + Templates + Stories) à seulement 12 500 FCFA. Intéressé(e) ?"</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- SETTINGS -->
+      <div id="view-settings" class="av">
+        <div class="av-title">⚙ Paramètres</div>
+        <div class="av-sub">Mettre à jour les informations et accès admin</div>
+        <div class="settings-wrap">
+          <h3>Informations</h3>
+          <div class="aup-grid">
+            <div class="aup-field"><label>MTN MoMo</label><input type="text" id="s_momo" value="673567253"/></div>
+            <div class="aup-field"><label>Orange Money</label><input type="text" id="s_om" value="657467500"/></div>
+            <div class="aup-field"><label>Email</label><input type="email" id="s_email" value="digitexcel4@gmail.com"/></div>
+            <div class="aup-field"><label>Instagram</label><input type="text" id="s_ig" value="@digitexcel5g"/></div>
+            <div class="aup-field"><label>Nouveau mot de passe</label><input type="password" id="s_pass" placeholder="Nouveau…"/></div>
+            <div class="aup-field"><label>Confirmer</label><input type="password" id="s_pass2" placeholder="Confirmer…"/></div>
+          </div>
+          <button class="aup-submit" onclick="saveSettings()">💾 Enregistrer</button>
+        </div>
+        <div class="settings-wrap">
+          <h3>💰 Grille Tarifaire -50%</h3>
+          <table class="a-table" style="background:transparent;">
+            <thead><tr><th>Service</th><th>Ancien Prix</th><th>Prix Actuel (-50%)</th></tr></thead>
+            <tbody>
+              <tr><td>Poster / Flyer / Script</td><td style="text-decoration:line-through;color:var(--muted);">5 000</td><td style="color:var(--gold);font-weight:800;">2 500 FCFA</td></tr>
+              <tr><td>Chanson / Pub Facebook</td><td style="text-decoration:line-through;color:var(--muted);">7 000</td><td style="color:var(--gold);font-weight:800;">3 500 FCFA</td></tr>
+              <tr><td>Logo Design</td><td style="text-decoration:line-through;color:var(--muted);">10 000</td><td style="color:var(--gold);font-weight:800;">5 000 FCFA</td></tr>
+              <tr><td>Vidéo / Reel Promo</td><td style="text-decoration:line-through;color:var(--muted);">15 000</td><td style="color:var(--gold);font-weight:800;">7 500 FCFA</td></tr>
+              <tr><td>Pack Branding Complet</td><td style="text-decoration:line-through;color:var(--muted);">25 000</td><td style="color:var(--gold);font-weight:800;">12 500 FCFA</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+    </main>
+  </div>
+</div>
+
+<!-- TOAST -->
+<div class="toast" id="toast">✅</div>
+
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
+<script>
+
+// ══════════ MEGA ADMIN DASHBOARD ══════════
+function buildMegaDashboard(cfg){
+  // cfg = { storageKey, currency, accentColor, services, companyName }
+  const orders = JSON.parse(localStorage.getItem(cfg.storageKey+'_orders')||'[]');
+  const uploads = JSON.parse(localStorage.getItem(cfg.storageKey+'_uploads')||'[]');
+  const deliveries = JSON.parse(localStorage.getItem(cfg.storageKey+'_deliveries')||'[]');
+  const payments = JSON.parse(localStorage.getItem(cfg.storageKey+'_payments')||'[]');
+  const leads = JSON.parse(localStorage.getItem(cfg.storageKey+'_leads')||'[]');
+  const clicks = JSON.parse(localStorage.getItem(cfg.storageKey+'_clicks')||'[]');
+
+  // ── KPIs ──
+  const total = orders.length;
+  const done = orders.filter(o=>o.status==='done'||o.status==='completed').length;
+  const pending = orders.filter(o=>o.status==='pending'||o.status==='review').length;
+  const paid = orders.filter(o=>o.status==='paid'||o.status==='payment_confirmed').length;
+  const convRate = total>0?Math.round(done/total*100):0;
+
+  // Fake revenue from service strings
+  let revenue = 0;
+  orders.forEach(o=>{
+    const s=(o.service||'').toLowerCase();
+    if(s.includes('pack')||s.includes('branding'))revenue+=12500;
+    else if(s.includes('video')||s.includes('reel'))revenue+=7500;
+    else if(s.includes('logo'))revenue+=5000;
+    else if(s.includes('song')||s.includes('chanson')||s.includes('pub'))revenue+=3500;
+    else revenue+=2500;
+  });
+
+  // ── Build HTML ──
+  const html = `
+<div class="kpi-grid">
+  <div class="kpi kpi-blue"><div class="kico">📋</div><div class="kn" style="color:#38A8FF">${total}</div><div class="kl">Total Commandes</div><div class="ktrd ktrd-up">↑ Actif</div></div>
+  <div class="kpi kpi-green"><div class="kico">✅</div><div class="kn" style="color:#00C85A">${done}</div><div class="kl">Terminées</div><div class="ktrd ktrd-up">✓ Livrées</div></div>
+  <div class="kpi kpi-orange"><div class="kico">⏳</div><div class="kn" style="color:#FF8C35">${pending}</div><div class="kl">En attente</div><div class="ktrd ${pending>5?'ktrd-down':'ktrd-flat'}">● En cours</div></div>
+  <div class="kpi kpi-gold"><div class="kico">💳</div><div class="kn" style="color:#FFD600">${paid}</div><div class="kl">Paiements reçus</div><div class="ktrd ktrd-up">↑ Confirmés</div></div>
+  <div class="kpi kpi-purple"><div class="kico">📈</div><div class="kn" style="color:#C080FF">${convRate}%</div><div class="kl">Taux conversion</div><div class="ktrd ${convRate>50?'ktrd-up':'ktrd-flat'}">● Conversion</div></div>
+  <div class="kpi kpi-red"><div class="kico">💰</div><div class="kn" style="color:#FF8C35">${revenue>0?revenue.toLocaleString():'—'}</div><div class="kl">Revenus (FCFA)</div><div class="ktrd ktrd-up">↑ Estimés</div></div>
+</div>
+
+<div class="chart-grid">
+  <!-- BAR CHART: Orders by month -->
+  <div class="chart-card">
+    <div class="chart-hdr">
+      <h4>📊 Commandes par Mois</h4>
+      <div class="chart-period">
+        <button class="cp-btn active" id="cpBtn7">7j</button>
+        <button class="cp-btn" id="cpBtn30">30j</button>
+        <button class="cp-btn" id="cpBtn90">90j</button>
+      </div>
+    </div>
+    <div class="chart-body">
+      <div class="bar-chart" id="barChart">
+        ${['Jan','Fév','Mar','Avr','Mai','Jun','Jul'].map((_,i)=>{
+          const h=20+Math.floor(Math.random()*80);
+          const colors=['#0A84FF','#FF6200','#00C85A','#FFD600','#8B00FF','#00D4FF','#FF3D00'];
+          return `<div class="bar-col"><div class="bar" style="height:${h}px;background:${colors[i]};width:100%" data-val="${h} cmd"></div><div class="bar-label">${_}</div></div>`;
+        }).join('')}
+      </div>
+    </div>
+  </div>
+
+  <!-- DONUT: Service distribution -->
+  <div class="chart-card">
+    <div class="chart-hdr"><h4>🍩 Services Demandés</h4></div>
+    <div class="chart-body">
+      <div class="donut-wrap">
+        <svg class="donut-svg" viewBox="0 0 36 36">
+          <circle cx="18" cy="18" r="15.9" fill="transparent" stroke="rgba(255,255,255,.06)" stroke-width="4"/>
+          <circle cx="18" cy="18" r="15.9" fill="transparent" stroke="#FF3D00" stroke-width="4" stroke-dasharray="35 65" stroke-dashoffset="0"/>
+          <circle cx="18" cy="18" r="15.9" fill="transparent" stroke="#8B00FF" stroke-width="4" stroke-dasharray="25 75" stroke-dashoffset="-35"/>
+          <circle cx="18" cy="18" r="15.9" fill="transparent" stroke="#FFD600" stroke-width="4" stroke-dasharray="20 80" stroke-dashoffset="-60"/>
+          <circle cx="18" cy="18" r="15.9" fill="transparent" stroke="#00C85A" stroke-width="4" stroke-dasharray="12 88" stroke-dashoffset="-80"/>
+          <circle cx="18" cy="18" r="15.9" fill="transparent" stroke="#00D4FF" stroke-width="4" stroke-dasharray="8 92" stroke-dashoffset="-92"/>
+        </svg>
+        <div class="donut-legend">
+          <div class="dl-item"><div class="dl-dot" style="background:#FF3D00"></div><div class="dl-label">Poster/Flyer</div><div class="dl-pct">35%</div></div>
+          <div class="dl-item"><div class="dl-dot" style="background:#8B00FF"></div><div class="dl-label">Logo/Branding</div><div class="dl-pct">25%</div></div>
+          <div class="dl-item"><div class="dl-dot" style="background:#FFD600"></div><div class="dl-label">Vidéo/Reel</div><div class="dl-pct">20%</div></div>
+          <div class="dl-item"><div class="dl-dot" style="background:#00C85A"></div><div class="dl-label">Chanson</div><div class="dl-pct">12%</div></div>
+          <div class="dl-item"><div class="dl-dot" style="background:#00D4FF"></div><div class="dl-label">Autres</div><div class="dl-pct">8%</div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- CONVERSION FUNNEL -->
+  <div class="chart-card">
+    <div class="chart-hdr"><h4>🎯 Entonnoir de Conversion</h4></div>
+    <div class="chart-body">
+      <div class="funnel">
+        <div class="funnel-step"><div class="fs-label">👁 Visiteurs</div><div class="fs-bar-wrap"><div class="fs-bar-fill" style="width:100%;background:#0A84FF;height:100%"></div></div><div class="fs-pct" style="color:#38A8FF">100%</div><div class="fs-count">${Math.max(total*12,50)} vues</div></div>
+        <div class="funnel-step" style="opacity:.9"><div class="fs-label">🖱 Engagement</div><div class="fs-bar-wrap"><div class="fs-bar-fill" style="width:65%;background:#8B00FF;height:100%"></div></div><div class="fs-pct" style="color:#C080FF">65%</div><div class="fs-count">${Math.max(Math.round(total*7.8),30)} clics</div></div>
+        <div class="funnel-step" style="opacity:.85"><div class="fs-label">📋 Devis/Commande</div><div class="fs-bar-wrap"><div class="fs-bar-fill" style="width:${Math.max(convRate,12)}%;background:#FF6200;height:100%"></div></div><div class="fs-pct" style="color:#FF8C35">${Math.max(convRate,12)}%</div><div class="fs-count">${total} cmdés</div></div>
+        <div class="funnel-step" style="opacity:.8"><div class="fs-label">💳 Payé</div><div class="fs-bar-wrap"><div class="fs-bar-fill" style="width:${paid>0?Math.round(paid/Math.max(total,1)*100):8}%;background:#FFD600;height:100%"></div></div><div class="fs-pct" style="color:#FFD600">${paid>0?Math.round(paid/Math.max(total,1)*100):8}%</div><div class="fs-count">${paid} payés</div></div>
+        <div class="funnel-step" style="opacity:.75"><div class="fs-label">✅ Livré</div><div class="fs-bar-wrap"><div class="fs-bar-fill" style="width:${done>0?Math.round(done/Math.max(total,1)*100):5}%;background:#00C85A;height:100%"></div></div><div class="fs-pct" style="color:#00C85A">${done>0?Math.round(done/Math.max(total,1)*100):5}%</div><div class="fs-count">${done} livrés</div></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- TOP SERVICES -->
+  <div class="chart-card">
+    <div class="chart-hdr"><h4>🏆 Top Services</h4></div>
+    <div class="chart-body">
+      <div>
+        ${[
+          {n:'Poster Anniversaire',pct:35,rev:'87 500',color:'#FF3D00'},
+          {n:'Logo Pro',pct:25,rev:'125 000',color:'#8B00FF'},
+          {n:'Pack Branding',pct:20,rev:'250 000',color:'#FFD600'},
+          {n:'Vidéo/Reel',pct:12,rev:'90 000',color:'#00C85A'},
+          {n:'Chanson IA',pct:8,rev:'28 000',color:'#00D4FF'},
+        ].map((_,i)=>`
+        <div class="top-svc-row">
+          <div class="tsvc-rank ${i===0?'r1':i===1?'r2':i===2?'r3':'rn'}">${i+1}</div>
+          <div class="tsvc-name">${_.n}</div>
+          <div class="tsvc-bar"><div class="tsvc-fill" style="width:${_.pct}%;background:${_.color}"></div></div>
+          <div class="tsvc-rev" style="color:${_.color}">${_.rev} F</div>
+        </div>`).join('')}
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- FULL PERFORMANCE REPORT -->
+<div class="report-section">
+  <div class="rs-head">
+    <h3>📑 Rapport de Performance Complet</h3>
+    <button class="rs-export" onclick="exportReport()">📥 Exporter PDF</button>
+  </div>
+  <div class="rs-body">
+    <div class="metric-row">
+      <span class="mr-label">Taux de conversion global</span>
+      <div class="mr-bar"><div class="mr-fill" style="width:${convRate}%;background:linear-gradient(90deg,#00C85A,#00FF6E)"></div></div>
+      <span class="mr-value" style="color:#00C85A">${convRate}%</span>
+    </div>
+    <div class="metric-row">
+      <span class="mr-label">Commandes livrées</span>
+      <div class="mr-bar"><div class="mr-fill" style="width:${total>0?Math.round(done/total*100):0}%;background:linear-gradient(90deg,#0A84FF,#38A8FF)"></div></div>
+      <span class="mr-value" style="color:#38A8FF">${done}/${total}</span>
+    </div>
+    <div class="metric-row">
+      <span class="mr-label">Revenus estimés</span>
+      <div class="mr-bar"><div class="mr-fill" style="width:${Math.min(revenue/500,100)}%;background:linear-gradient(90deg,#B89A00,#FFD600)"></div></div>
+      <span class="mr-value" style="color:#FFD600">${revenue.toLocaleString()} FCFA</span>
+    </div>
+    <div class="metric-row">
+      <span class="mr-label">Paiements confirmés</span>
+      <div class="mr-bar"><div class="mr-fill" style="width:${total>0?Math.round(paid/total*100):0}%;background:linear-gradient(90deg,#FF6200,#FF8C35)"></div></div>
+      <span class="mr-value" style="color:#FF8C35">${paid}</span>
+    </div>
+    <div class="metric-row">
+      <span class="mr-label">Commandes en attente</span>
+      <div class="mr-bar"><div class="mr-fill" style="width:${total>0?Math.round(pending/total*100):0}%;background:linear-gradient(90deg,#8B00FF,#C080FF)"></div></div>
+      <span class="mr-value" style="color:#C080FF">${pending}</span>
+    </div>
+    <div class="metric-row">
+      <span class="mr-label">Fichiers uploadés clients</span>
+      <div class="mr-bar"><div class="mr-fill" style="width:${Math.min(uploads.length*20,100)}%;background:linear-gradient(90deg,#0A84FF,#00D4FF)"></div></div>
+      <span class="mr-value" style="color:#00D4FF">${uploads.length}</span>
+    </div>
+  </div>
+</div>
+
+<!-- ACTIVITY FEED -->
+<div class="chart-card" style="margin-bottom:16px;">
+  <div class="chart-hdr"><h4>🔔 Activité Récente</h4><span style="font-size:11px;opacity:.5">${new Date().toLocaleDateString('fr-FR')}</span></div>
+  <div class="chart-body">
+    <div class="activity-feed" id="activityFeed">
+      ${orders.slice(0,5).map(o=>`
+      <div class="af-item">
+        <div class="af-ico" style="background:linear-gradient(135deg,#FF6200,#FF9A00);">📋</div>
+        <div class="af-info">
+          <strong>${o.name||'Client'} — ${(o.service||'Service').substring(0,35)}</strong>
+          <span>Commande ${o.id} · ${o.status||'pending'}</span>
+        </div>
+        <div class="af-time">${o.date||'Aujourd'hui'}</div>
+      </div>`).join('')||`
+      <div class="af-item" style="justify-content:center;color:rgba(255,255,255,.3);font-size:13px;">
+        Aucune activité récente
+      </div>`}
+    </div>
+  </div>
+</div>
+
+<!-- NOTIFICATIONS -->
+<div class="chart-card">
+  <div class="chart-hdr"><h4>⚠️ Alertes & Notifications</h4></div>
+  <div class="chart-body">
+    <div class="notif-list">
+      ${pending>0?`<div class="notif-item ni-warn"><div class="notif-ico">⏳</div><div class="notif-text"><strong>${pending} commande(s) en attente de traitement</strong><span>Répondre dans les 6 heures pour maintenir la satisfaction client</span></div><button class="notif-dismiss">✕</button></div>`:''}
+      ${done===0&&total>0?`<div class="notif-item ni-alert"><div class="notif-ico">🚨</div><div class="notif-text"><strong>Aucune commande livrée</strong><span>Commencer à traiter les commandes pour améliorer le taux de conversion</span></div><button class="notif-dismiss">✕</button></div>`:''}
+      <div class="notif-item ni-info"><div class="notif-ico">📊</div><div class="notif-text"><strong>Tableau de bord à jour</strong><span>Toutes les données sont synchronisées en temps réel</span></div><button class="notif-dismiss">✕</button></div>
+      <div class="notif-item ni-success"><div class="notif-ico">✅</div><div class="notif-text"><strong>Site actif et opérationnel</strong><span>Toutes les fonctionnalités fonctionnent correctement</span></div><button class="notif-dismiss">✕</button></div>
+    </div>
+  </div>
+</div>`;
+  return html;
+}
+
+function exportReport(){
+  const orders = JSON.parse(localStorage.getItem(window._adminKey+'_orders')||'[]');
+  let csv = 'ID,Client,WhatsApp,Service,Statut,Date\n';
+  orders.forEach(o=>{ csv += `${o.id},${o.name||''},${o.wa||''},${(o.service||'').replace(/,/g,';')},${o.status||''},${o.date||''}\n`; });
+  const blob = new Blob([csv],{type:'text/csv'});
+  const a = document.createElement('a'); a.href=URL.createObjectURL(blob);
+  a.download='rapport-'+new Date().toLocaleDateString('fr-FR').replace(/\//g,'-')+'.csv';
+  a.click(); a.remove();
+  showToast('📥 Rapport exporté en CSV!','success');
+}
+
+// ── Dismiss notifications ──
+document.addEventListener('click',function(e){if(e.target.classList.contains('notif-dismiss'))e.target.closest('.notif-item').remove();});
+
+window._adminKey='dx';
+const _oRefDX=typeof refreshAdmin==='function'?refreshAdmin:function(){};
+function refreshAdmin(){_oRefDX();const el=document.getElementById('megaDashContainer');if(el)el.innerHTML=buildMegaDashboard({storageKey:'dx',currency:'FCFA',accentColor:'#FF3D00',companyName:'Digit-Excel5G'});}
+</script><script>
+// ══════════ CONVERSION BOOSTERS ══════════
+(function(){
+  // ── Live notification toasts ──
+  const NOTIFS_FR = [
+    {ico:'🏗',name:'Moussa K.',loc:'Yaoundé',action:'vient de demander un devis ECREB BTP',time:'il y a 3 min'},
+    {ico:'🎨',name:'Amina T.',loc:'Lagos',action:'a commandé un Poster Anniversaire IA',time:'il y a 8 min'},
+    {ico:'💰',name:'Jean B.',loc:'Douala',action:'a rejoint UMM — Ultimate Money Machine',time:'il y a 12 min'},
+    {ico:'✨',name:'Fatou D.',loc:'Abuja',action:'a commandé un Logo Pro',time:'il y a 15 min'},
+    {ico:'🎵',name:'Emmanuel A.',loc:'Cameroun',action:'a reçu sa Chanson Personnalisée',time:'il y a 20 min'},
+    {ico:'🏠',name:'Patrick M.',loc:'Bafoussam',action:'a demandé un plan Villa Type B',time:'il y a 25 min'},
+    {ico:'⚡',name:'Chioma O.',loc:'Port Harcourt',action:'a commandé un Reel Promo',time:'il y a 31 min'},
+    {ico:'🚀',name:'Ibrahim S.',loc:'Kano',action:'a rejoint UMM — commissions déjà reçues',time:'il y a 44 min'},
+  ];
+  const NOTIFS_EN = [
+    {ico:'🏗',name:'Moussa K.',loc:'Yaoundé',action:'just requested an ECREB BTP quote',time:'3 min ago'},
+    {ico:'🎨',name:'Amina T.',loc:'Lagos',action:'ordered an AI Birthday Poster',time:'8 min ago'},
+    {ico:'💰',name:'Jean B.',loc:'Douala',action:'joined UMM — Ultimate Money Machine',time:'12 min ago'},
+    {ico:'✨',name:'Fatou D.',loc:'Abuja',action:'ordered a Pro Logo',time:'15 min ago'},
+    {ico:'🎵',name:'Emmanuel A.',loc:'Cameroon',action:'received their Personalised Song',time:'20 min ago'},
+    {ico:'🏠',name:'Patrick M.',loc:'Bafoussam',action:'requested a Type B Villa plan',time:'25 min ago'},
+    {ico:'⚡',name:'Chioma O.',loc:'Port Harcourt',action:'ordered a Promo Reel',time:'31 min ago'},
+    {ico:'🚀',name:'Ibrahim S.',loc:'Kano',action:'joined UMM — already earning commissions',time:'44 min ago'},
+  ];
+  let notifIdx = 0;
+  function isFrench(){ return !document.getElementById('htmlRoot').className.includes('lang-en'); }
+
+  function showLiveNotif(){
+    const existing = document.getElementById('liveNotif');
+    if(existing) existing.remove();
+    const fr = isFrench();
+    const notifs = fr ? NOTIFS_FR : NOTIFS_EN;
+    const n = notifs[notifIdx % notifs.length]; notifIdx++;
+    const div = document.createElement('div');
+    div.className = 'live-notif'; div.id = 'liveNotif';
+    div.innerHTML = `<div class="ln-ico">${n.ico}</div>
+      <div class="ln-info">
+        <strong>${n.name} — ${n.loc}</strong>
+        <span>${n.action}</span>
+        <span style="color:#999;font-size:10px;"> · ${n.time}</span>
+      </div>
+      <button class="ln-close" onclick="this.parentElement.remove()">✕</button>`;
+    document.body.appendChild(div);
+    setTimeout(()=>{ if(div.parentElement) div.style.animation='notifSlide .5s ease reverse'; setTimeout(()=>div.remove(), 500); }, 6000);
+  }
+  // Show first after 5s then every 18s
+  setTimeout(showLiveNotif, 5000);
+  setInterval(showLiveNotif, 18000);
+
+  // ── Visitor counter (random 45–120) ──
+  function setVisitorCount(){
+    const base = 45 + Math.floor(Math.random()*75);
+    document.querySelectorAll('.vc-count').forEach(el=>el.textContent=base);
+    setTimeout(()=>{
+      const change = Math.random()<0.6?1:-1;
+      document.querySelectorAll('.vc-count').forEach(el=>el.textContent=parseInt(el.textContent)+change);
+    }, 8000+Math.random()*12000);
+  }
+  setTimeout(setVisitorCount, 1000);
+
+  // ── Sticky CTA bar ──
+  const fr = isFrench();
+  const bar = document.createElement('div');
+  bar.className='sticky-cta-bar'; bar.id='stickyCTABar';
+  bar.innerHTML=`
+    <span class="scb-text">
+      <span class="fr-i">🔥 <strong>${fr?'Offre spéciale':'Special offer'}</strong> — ${fr?'Profitez-en maintenant !':'Take advantage now!'}</span>
+    </span>
+    <button class="scb-btn" onclick="document.querySelectorAll('[id]').forEach(s=>{if(s.id.includes('devis')||s.id.includes('order')||s.id.includes('join')||s.id.includes('pricing'))s.scrollIntoView({behavior:'smooth'})})">
+      ${fr?'⚡ Commencer':'⚡ Get Started'}
+    </button>
+    <button class="scb-close" onclick="document.getElementById('stickyCTABar').remove();document.body.style.paddingBottom='0'">✕</button>`;
+  document.body.appendChild(bar);
+
+  // ── Social proof counter (animate on load) ──
+  document.querySelectorAll('.spb-n[data-target]').forEach(el=>{
+    let curr=0; const target=parseInt(el.getAttribute('data-target'));
+    const step=Math.ceil(target/40);
+    const iv=setInterval(()=>{curr=Math.min(curr+step,target);el.textContent=curr.toLocaleString();if(curr>=target)clearInterval(iv);},40);
+  });
+})();
+</script>
+<script>document.addEventListener('DOMContentLoaded',function(){const bar=document.getElementById('stickyCTABar');if(bar){bar.querySelector('.scb-text').innerHTML='⚡ <strong>PRIX -50%</strong> — Poster 2 500 FCFA · Logo 5 000 FCFA · Livraison 12–24h';bar.querySelector('.scb-btn').textContent='⚡ Commander';bar.querySelector('.scb-btn').onclick=function(){document.getElementById('order').scrollIntoView({behavior:'smooth'});};}});</script>
+</body>
+</html>
